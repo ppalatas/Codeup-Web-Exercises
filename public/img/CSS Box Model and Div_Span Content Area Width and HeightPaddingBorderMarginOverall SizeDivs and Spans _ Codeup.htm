@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://codeup.teachable.com/courses/olympic/lectures/1684165 -->
+<html class=" "><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:32,height:32/https://www.filepicker.io/api/file/U0y6s1uRj2gBHSt6otJQ" rel="icon" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:72,height:72/https://www.filepicker.io/api/file/U0y6s1uRj2gBHSt6otJQ" rel="apple-touch-icon" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:144,height:144/https://www.filepicker.io/api/file/U0y6s1uRj2gBHSt6otJQ" rel="apple-touch-icon" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:320,height:345/https://www.filepicker.io/api/file/vaUu9fNQa2qVhk0nw73U" rel="apple-touch-startup-image" type="image/png">
+<link href="https://process.filestackapi.com/ADNupMnWyR7kCWRvm76Laz/resize=width:640,height:690/https://www.filepicker.io/api/file/vaUu9fNQa2qVhk0nw73U" rel="apple-touch-startup-image" type="image/png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="G26G/1pR0mpX7A7A9ozgh7p4ac0Vim3gpzwZrm9brfjX9cbmk1RF04xs22+GcyGJClet7bwC1YWhq//RtNqyFg==">
+<link href="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/school-css-1478285568-47955-440264c1387670a7131257985233f095.css" rel="stylesheet" data-turbolinks-track="true">
+<title>CSS Box Model and Div/Span
+Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans | Codeup</title>
+<link rel="canonical" href="http://codeup.teachable.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="gocodeup">
+<meta name="twitter:title" content="Codeup">
+<meta name="twitter:image" content="https://www.filepicker.io/api/file/MYgqEQy8RvOXc7gyTzV4">
+<meta property="og:title" content="Codeup">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://www.filepicker.io/api/file/MYgqEQy8RvOXc7gyTzV4">
+<meta property="og:url" content="http://codeup.teachable.com">
+<meta name="site_title" content="Codeup">
+<style></style>
+<script type="text/javascript" async="" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/ec.js"></script><iframe allowtransparency="true" scrolling="no" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/iframe_shim.html" style="height: 1px; left: -200px; position: absolute; top: -200px; width: 1px; direction: ltr;"></iframe><iframe allowtransparency="true" scrolling="no" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/iframe_shim(1).html" style="height: 1px; left: -200px; position: absolute; top: -200px; width: 1px; direction: ltr;"></iframe><iframe allowtransparency="true" scrolling="no" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/iframe_shim(2).html" style="height: 1px; left: -200px; position: absolute; top: -200px; width: 1px; direction: ltr;"></iframe><script type="text/javascript" async="" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/ecommerce.js"></script><script async="" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/analytics.js"></script><script async="" id="analytics-js" type="text/javascript" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/analytics(1).js"></script><script type="text/javascript" async="" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/filestack.js"></script><script src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/E-v1.js"></script>
+
+<script src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/application-8a1ccd3265d337333f10a589c37bba509be57be5768e30b38fbf217b0eec76cc.js" data-turbolinks-track="true"></script><link href="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+<style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><style type="text/css">.fp__btn{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:inline-block;height:34px;padding:4px 30px 5px 40px;position:relative;margin-bottom:0;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;font-family:"Open Sans", sans-serif;font-size:12px;font-weight:600;line-height:1.42857143;color:#fff;text-align:center;white-space:nowrap;background:#ef4925;background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAVCAYAAABLy77vAAAABGdBTUEAALGPC/xhBQAAAJRJREFUOBHNUcEWgCAIy14fbl9egK5MRarHQS7ocANmOCgWh1gdNERig1CgwPlLxkZuE80ndHlU+4Lda1zz0m01dSKtcz0h7qpQb7WR+HyrqRPxahzwwMqqkEVs6qnv+86NQAbcJlK/X+vMeMe7XcBOYaRzcbItUR7/8QgcykmElQrQPErnmxNxl2yyiwcgEvQUocIJaE6yERwqXDIAAAAASUVORK5CYII=");background-repeat:no-repeat;background-position:15px 6px;border:1px solid transparent;border-radius:17px}.fp__btn:hover{background-color:#d64533}.fp__btn::after{position:absolute;content:"";top:15px;right:14px;width:7px;height:4px;background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAICAYAAAA1BOUGAAAABGdBTUEAALGPC/xhBQAAAGlJREFUCB1j/P//vw4DA4MiEKOD+0xAkatA/AJNBsS/ysTIyPgfyDgHxO+hCkD0Oag4RAhoPDsQm4NoqCIGBiBnAhBjAxNAkkxAvBZNFsQHuQesmxPIOQZVAKI54UZDFYgABbcBsQhMAgDIVGYSqZsn6wAAAABJRU5ErkJggg==");}.fp__btn:hover::after{background-position:0 -4px;}.fp__btn:active,.fp__btn:focus{outline:none}@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2){.fp__btn{background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAqCAYAAADbCvnoAAAABGdBTUEAALGPC/xhBQAAAQFJREFUWAntWEESwjAIbBwfHl+upNoRNjKUJhk5kIvZQGG7bHOwPGltgdYtEJedShKyJnLHhEILz1Zi9HCOzFI7FUqFLAWseDgPdfeQ9QZ4b1j53nstnEJJyBqx20NeT1gEMB5uZG6Fzn5lV5UMp1ASQhMjdnvoqjewsYbDjcytEH5lsxULp1AS0sx8nJfVnjganf3NkVlKhVPIfQ9Zb6jF0atK3mNriXwpicPHvIeyr3sTDA53VgpgH8BvMu1ZCCz7ew/7MPwlE4CQJPNnQj2ZX4SYlEPbVpsvKFZ5TOwhcRoUTQiwwhVjArPEqVvRhMCneMXzDk9lwYphIwrZZOihF32oehMAa1qSAAAAAElFTkSuQmCC");background-size:18px 21px}.fp__btn::after{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQCAYAAAAmlE46AAAABGdBTUEAALGPC/xhBQAAANpJREFUKBWVkU8KglAYxJ/u3HuBwmUX8BqepKN4ka4RguDOVYu2QVCrhIJ6/caekqLiGxi+PzPD58PAWrszxmygD84h7hpePFLy1mEQBJamgvcVYXkqZXTR0LwpJWw0z0Ba6bymDcrI4kkp4EvzCNoVztNKfVATwoOiyx/NDup1SVqPQVBbDDeK3txBb9JuHfhNW3HWjZhDX+SGRAgPHkl5f0+kieBxRVieaPD5LGJ4WghLiwehbkBI4HUirF3S+SYrhhQ2f2H16aR5vMSYwbdjNtYXZ0J7cc70BXnFMHIGznzEAAAAAElFTkSuQmCC");background-size:7px 8px;}}</style><script type="application/ld+json">{"@context":"http://schema.org/","@id":"https://fast.wistia.net/embed/iframe/4d9ndj92b8","@type":"VideoObject","duration":"PT26M19S","name":"07_css_box_model.mp4","thumbnailUrl":"https://embed-ssl.wistia.com/deliveries/2736aee4601bd7f4af0a23079d4ea5c8988bd662.jpg?image_crop_resized=850x20","embedUrl":"https://fast.wistia.net/embed/iframe/4d9ndj92b8","uploadDate":"2016-11-07","description":"a course_115047 - (1) Codeup Prework - Niagra Cohort video from ankurnagpal"}</script></head><body data-no-turbolinks="true"><no-conversion-pixels></no-conversion-pixels>
+<script>
+    if(typeof ga != 'function') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    }
+    ga('create', 'UA-44397410-1', 'auto', {'name': 'fedoraTracker', 'allowLinker': true});
+    ga('fedoraTracker.require', 'linker');
+    ga('fedoraTracker.linker:autoLink', ['codeup.teachable.com'] );
+    ga('fedoraTracker.require', 'ecommerce');
+    ga('fedoraTracker.require', 'ec');
+    ga('fedoraTracker.send', 'pageview');
+    </script>
+<link href="http://codeup.teachable.com/blog/rss" rel="alternate" title="RSS Feed" type="application/rss+xml">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+    <meta http-content="IE=Edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width,initial-scale=1.0,user-scalable=no" name="viewport">
+    <meta id="fedora-keys" data-env="production" data-stripe="pk_live_hkgvgSBxG4TAl3zGlXiB1KUX" data-track-all-ahoy="false" data-track-changes-ahoy="false" data-track-clicks-ahoy="false" data-track-sumbits-ahoy="false" data-taxamo="public_3adAdeo6B9dUufD_mJMEMkTXmxbK-vffcybxQEvrshk"><meta id="fedora-data" data-id="2959065" data-name="Phillip Palatas" data-email="ppalatas@gmail.com" data-school-id="47955" data-src="null" data-joined-at="&quot;2017-01-07T19:38:51Z&quot;" data-wistia-identifier="47955:student:2959065" data-report-card="{&quot;115047&quot;:{&quot;course_id&quot;:115047,&quot;days_enrolled&quot;:6,&quot;percent_complete&quot;:41,&quot;class_period_id&quot;:null,&quot;completed_lecture_count&quot;:32,&quot;completed_lecture_ids&quot;:[1684120,1684121,1684122,1684123,1684124,1684125,1684126,1684127,1684128,1684129,1684130,1684142,1684143,1684144,1684145,1684146,1684147,1684148,1684149,1684150,1684151,1684152,1684153,1684154,1684155,1684156,1684157,1684158,1684170,1684171,1684172,1684173],&quot;has_full_drip_access&quot;:&quot;false&quot;}}" data-course-ids="[115047]" data-role="student" data-last-four="null" data-completed-lecture-ids="[1684120,1684121,1684122,1684123,1684124,1684125,1684126,1684127,1684128,1684129,1684130,1684142,1684143,1684144,1684145,1684146,1684147,1684148,1684149,1684150,1684151,1684152,1684153,1684154,1684155,1684156,1684157,1684158,1684170,1684171,1684172,1684173]" data-school-launched="true" data-preview="logged_in" data-turn-off-fedora-branding="true" data-plan-supports-whitelabeling="false" data-powered-by-text="Powered by" data-drip-enabled="false" data-asset-path="//https://d2oz8i5n9se8ej.cloudfront.net/assets/footer/teachable-logo-white-efd32576079839534d5b6e87bf4424e99b12624f854b2c500a4d3f0b6e2af46b.svg" data-course-id="115047" data-course-url="http://codeup.teachable.com/courses/olympic" data-lecture-id="1684159" data-lecture-url="http://codeup.teachable.com/courses/olympic/lectures/1684159"><meta id="analytics-keys" name="analytics" data-analytics="{}">
+    
+    <!-- Lecture Header -->
+<header class="full-width half-height is-signed-in">
+  <div class="lecture-left">
+    <a class="nav-icon-back" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic">
+      <i class="fa fa-angle-left"></i>
+    </a>
+    <div class="dropdown settings-dropdown">
+      <a href="http://codeup.teachable.com/courses/olympic/lectures/1684165#" class="nav-icon-settings dropdown-toggle" id="settings_menu" data-toggle="dropdown">
+        <i class="fa fa-cog"></i>
+      </a>
+      <ul class="dropdown-menu left-caret" role="menu" aria-labelledby="settings_menu">
+  <!-- AUTOPLAY -->
+  <li>
+    <div class="switch">
+      <input id="custom-toggle-autoplay" class="custom-toggle custom-toggle-round" type="checkbox" checked="checked">
+      <label for="custom-toggle-autoplay"></label>
+    </div>
+    Autoplay
+  </li>
+  <!-- AUTOCOMPLETE -->
+  <li>
+    <div class="switch">
+      <input id="custom-toggle-autocomplete" class="custom-toggle custom-toggle-round" type="checkbox">
+      <label for="custom-toggle-autocomplete"></label>
+    </div>
+    Autocomplete
+  </li>
+  <!-- PLAYER TYPE -->
+  <li>
+    <div class="pull-right">
+      <div class="switch-toggle well">
+        <input id="toggle_html5" name="custom-toggle-player" type="radio" checked="checked">
+        <label for="toggle_html5" onclick="">HTML5</label>
+        <input id="toggle_flash" name="custom-toggle-player" type="radio">
+        <label for="toggle_flash" onclick="">Flash</label>
+        <a class="btn btn-primary"></a>
+      </div>
+    </div>
+    Player
+  </li>
+  <!-- PLAYBACK SPEED -->
+  <li>
+    <div class="pull-right">
+      <div class="playback-speed"><span class="glyphicon glyphicon-forward"></span> 1x</div>
+    </div>
+    Speed
+  </li>
+  <!-- QUALITY: not working yet -->
+ <!--  <li>
+    <div class="pull-right">
+      <div class="switch-toggle switch-3 well">
+        <input id="auto" name="quality" type="radio" checked>
+        <label for="auto" onclick="">Auto</label>
+        <input id="hd" name="quality" type="radio">
+        <label for="hd" onclick="">HD</label>
+        <input id="sd" name="quality" type="radio">
+        <label for="sd" onclick="">SD</label>
+        <a class="btn btn-primary"></a>
+      </div>
+    </div>
+    Quality
+  </li> -->
+</ul>
+    </div>
+    <a class="nav-icon-list show-xs hidden-sm hidden-md hidden-lg collapsed" role="button" data-toggle="collapse" href="http://codeup.teachable.com/courses/olympic/lectures/1684165#courseSidebar" aria-expanded="false" aria-controls="courseSidebar">
+        <i class="fa fa-list"></i>
+      </a>
+  </div>
+  
+  <div class="lecture-nav">
+    <a class="nav-btn" href="http://codeup.teachable.com/courses/olympic/lectures/1684130" id="lecture_previous_button">
+      <i class="fa fa-arrow-left"></i>
+      &nbsp;
+      <span class="nav-text">Previous Lecture</span>
+    </a>
+    <a class="nav-btn complete" href="http://codeup.teachable.com/courses/olympic/lectures/1684160" id="lecture_complete_button">
+      <span class="nav-text">Complete and continue</span>
+      &nbsp;
+      <i class="fa fa-arrow-right"></i>
+    </a>
+  </div>
+  
+</header>
+
+    <div class="course-sidebar lecture-page collapse navbar-collapse navbar-sidebar-collapse" id="courseSidebar" aria-expanded="false">
+  <h2 style="padding-bottom: 84px">Codeup Prework - Olympic Cohort</h2>
+  <!-- Course Progress -->
+  
+  <div class="course-progress lecture-page sticky">
+    <div class="progressbar">
+      <div class="progressbar-fill" style="min-width:48%;"></div>
+    </div>
+    <div class="small course-progress-percentage">
+      <span class="percentage">48%</span>
+      COMPLETE
+    </div>
+  </div>
+  
+  <!-- Lecture list on courses page (enrolled user) -->
+
+  <div class="row lecture-sidebar">
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Introduction
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684172" data-lecture-url="/courses/olympic/lectures/1684172" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684172" id="sidebar_link_1684172">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                A Note From Our Instructors
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684173" data-lecture-url="/courses/olympic/lectures/1684173" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684173" id="sidebar_link_1684173">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Getting Started
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Required Software
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684170" data-lecture-url="/courses/olympic/lectures/1684170" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684170" id="sidebar_link_1684170">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Operating System
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684171" data-lecture-url="/courses/olympic/lectures/1684171" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684171" id="sidebar_link_1684171">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Software To Download And Install
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        HTML Elements
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684142" data-lecture-url="/courses/olympic/lectures/1684142" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684142" id="sidebar_link_1684142">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Introduction to HTML
+                
+                  (18:52)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684143" data-lecture-url="/courses/olympic/lectures/1684143" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684143" id="sidebar_link_1684143">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Hello World in HTML
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684144" data-lecture-url="/courses/olympic/lectures/1684144" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684144" id="sidebar_link_1684144">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                HTML Elements
+                
+                  (68:08)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684145" data-lecture-url="/courses/olympic/lectures/1684145" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684145" id="sidebar_link_1684145">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: HTML Elements
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684146" data-lecture-url="/courses/olympic/lectures/1684146" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684146" id="sidebar_link_1684146">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Headings
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684147" data-lecture-url="/courses/olympic/lectures/1684147" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684147" id="sidebar_link_1684147">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: HTML Headings
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684148" data-lecture-url="/courses/olympic/lectures/1684148" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684148" id="sidebar_link_1684148">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Paragraphs and More
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684149" data-lecture-url="/courses/olympic/lectures/1684149" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684149" id="sidebar_link_1684149">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Paragraphs and More
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684150" data-lecture-url="/courses/olympic/lectures/1684150" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684150" id="sidebar_link_1684150">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Lists
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684151" data-lecture-url="/courses/olympic/lectures/1684151" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684151" id="sidebar_link_1684151">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Lists
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684152" data-lecture-url="/courses/olympic/lectures/1684152" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684152" id="sidebar_link_1684152">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Anchors
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684153" data-lecture-url="/courses/olympic/lectures/1684153" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684153" id="sidebar_link_1684153">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Anchors
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684154" data-lecture-url="/courses/olympic/lectures/1684154" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684154" id="sidebar_link_1684154">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Images
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684155" data-lecture-url="/courses/olympic/lectures/1684155" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684155" id="sidebar_link_1684155">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Images
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684156" data-lecture-url="/courses/olympic/lectures/1684156" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684156" id="sidebar_link_1684156">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Tables
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684157" data-lecture-url="/courses/olympic/lectures/1684157" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684157" id="sidebar_link_1684157">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Tables
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684158" data-lecture-url="/courses/olympic/lectures/1684158" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684158" id="sidebar_link_1684158">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Quiz
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        HTML Forms
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684120" data-lecture-url="/courses/olympic/lectures/1684120" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684120" id="sidebar_link_1684120">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Introduction to Forms
+                
+                  (78:27)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684121" data-lecture-url="/courses/olympic/lectures/1684121" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684121" id="sidebar_link_1684121">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Introduction to Forms
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684122" data-lecture-url="/courses/olympic/lectures/1684122" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684122" id="sidebar_link_1684122">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Inputs and Submitting
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684123" data-lecture-url="/courses/olympic/lectures/1684123" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684123" id="sidebar_link_1684123">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Input and Submitting
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684124" data-lecture-url="/courses/olympic/lectures/1684124" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684124" id="sidebar_link_1684124">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Text and Textarea
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684125" data-lecture-url="/courses/olympic/lectures/1684125" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684125" id="sidebar_link_1684125">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Text and Textarea
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684126" data-lecture-url="/courses/olympic/lectures/1684126" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684126" id="sidebar_link_1684126">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Checkbox Radio
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684127" data-lecture-url="/courses/olympic/lectures/1684127" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684127" id="sidebar_link_1684127">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Checkbox Radio
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684128" data-lecture-url="/courses/olympic/lectures/1684128" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684128" id="sidebar_link_1684128">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Select (Drop-Down and Multi-Select Lists)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684129" data-lecture-url="/courses/olympic/lectures/1684129" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684129" id="sidebar_link_1684129">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Select
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684130" data-lecture-url="/courses/olympic/lectures/1684130" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684130" id="sidebar_link_1684130">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Quiz
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        CSS
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684159" data-lecture-url="/courses/olympic/lectures/1684159" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684159" id="sidebar_link_1684159">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Intro to CSS
+                
+                  (21:47)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684160" data-lecture-url="/courses/olympic/lectures/1684160" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684160" id="sidebar_link_1684160">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: CSS Intro
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684161" data-lecture-url="/courses/olympic/lectures/1684161" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684161" id="sidebar_link_1684161">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                CSS Selectors
+                
+                  (41:20)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684162" data-lecture-url="/courses/olympic/lectures/1684162" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684162" id="sidebar_link_1684162">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: CSS Selectors
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684163" data-lecture-url="/courses/olympic/lectures/1684163" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684163" id="sidebar_link_1684163">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                CSS Properties
+                
+                  (20:42)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684164" data-lecture-url="/courses/olympic/lectures/1684164" class="section-item completed">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684164" id="sidebar_link_1684164">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Basic Properties
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684165" data-lecture-url="/courses/olympic/lectures/1684165" class="section-item incomplete next-lecture">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684165" id="sidebar_link_1684165">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                CSS Box Model and Div/Span
+                
+                  (26:19)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684166" data-lecture-url="/courses/olympic/lectures/1684166" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684166" id="sidebar_link_1684166">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Box Model
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684167" data-lecture-url="/courses/olympic/lectures/1684167" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684167" id="sidebar_link_1684167">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                CSS Floats and Positioning
+                
+                  (40:03)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684168" data-lecture-url="/courses/olympic/lectures/1684168" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684168" id="sidebar_link_1684168">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Positioning
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684169" data-lecture-url="/courses/olympic/lectures/1684169" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684169" id="sidebar_link_1684169">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Quiz
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Javascript
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684131" data-lecture-url="/courses/olympic/lectures/1684131" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684131" id="sidebar_link_1684131">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Introduction to Javascript
+                
+                  (71:37)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684132" data-lecture-url="/courses/olympic/lectures/1684132" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684132" id="sidebar_link_1684132">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Introduction to Javascript
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684133" data-lecture-url="/courses/olympic/lectures/1684133" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684133" id="sidebar_link_1684133">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Data Types: Booleans
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684134" data-lecture-url="/courses/olympic/lectures/1684134" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684134" id="sidebar_link_1684134">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Boolean
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684135" data-lecture-url="/courses/olympic/lectures/1684135" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684135" id="sidebar_link_1684135">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Data Types: Numbers
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684136" data-lecture-url="/courses/olympic/lectures/1684136" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684136" id="sidebar_link_1684136">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Numbers
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684137" data-lecture-url="/courses/olympic/lectures/1684137" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684137" id="sidebar_link_1684137">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Data Types: Strings
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684138" data-lecture-url="/courses/olympic/lectures/1684138" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684138" id="sidebar_link_1684138">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Strings
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684139" data-lecture-url="/courses/olympic/lectures/1684139" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684139" id="sidebar_link_1684139">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Javascript with HTML
+                
+                  (10:01)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684140" data-lecture-url="/courses/olympic/lectures/1684140" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684140" id="sidebar_link_1684140">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Javascript and HTML
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684141" data-lecture-url="/courses/olympic/lectures/1684141" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684141" id="sidebar_link_1684141">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Quiz
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Javascript Statements
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684108" data-lecture-url="/courses/olympic/lectures/1684108" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684108" id="sidebar_link_1684108">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Statements
+                
+                  (66:12)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684109" data-lecture-url="/courses/olympic/lectures/1684109" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684109" id="sidebar_link_1684109">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                If/Else Statements
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684110" data-lecture-url="/courses/olympic/lectures/1684110" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684110" id="sidebar_link_1684110">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: If/Else
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684111" data-lecture-url="/courses/olympic/lectures/1684111" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684111" id="sidebar_link_1684111">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Switch Statements
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684112" data-lecture-url="/courses/olympic/lectures/1684112" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684112" id="sidebar_link_1684112">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Switch Statements
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684113" data-lecture-url="/courses/olympic/lectures/1684113" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684113" id="sidebar_link_1684113">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                While Loops
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684114" data-lecture-url="/courses/olympic/lectures/1684114" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684114" id="sidebar_link_1684114">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: While Loops
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684115" data-lecture-url="/courses/olympic/lectures/1684115" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684115" id="sidebar_link_1684115">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                For Loops
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684116" data-lecture-url="/courses/olympic/lectures/1684116" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684116" id="sidebar_link_1684116">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: For Loops
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684117" data-lecture-url="/courses/olympic/lectures/1684117" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684117" id="sidebar_link_1684117">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Break and Continue
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684118" data-lecture-url="/courses/olympic/lectures/1684118" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684118" id="sidebar_link_1684118">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Break and Continue
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Javascript Functions
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684102" data-lecture-url="/courses/olympic/lectures/1684102" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684102" id="sidebar_link_1684102">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Functions
+                
+                  (58:30)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684103" data-lecture-url="/courses/olympic/lectures/1684103" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684103" id="sidebar_link_1684103">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Functions
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684104" data-lecture-url="/courses/olympic/lectures/1684104" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684104" id="sidebar_link_1684104">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                User Interactions
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684105" data-lecture-url="/courses/olympic/lectures/1684105" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684105" id="sidebar_link_1684105">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: User Interaction
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684106" data-lecture-url="/courses/olympic/lectures/1684106" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684106" id="sidebar_link_1684106">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Scope
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684107" data-lecture-url="/courses/olympic/lectures/1684107" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684107" id="sidebar_link_1684107">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Scope
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+    <div class="col-sm-12 course-section">
+      <div class="section-title" data-days-until-dripped="0" data-course-id="115047">
+        <span class="section-lock">
+          <i class="fa fa-lock"></i>&nbsp;
+        </span>
+        Javascript Arrays
+      </div>
+      <ul class="section-list">
+        
+        <li data-lecture-id="1684094" data-lecture-url="/courses/olympic/lectures/1684094" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684094" id="sidebar_link_1684094">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-youtube-play"></i>
+              </span>
+              <span class="lecture-name">
+                Introduction to Arrays
+                
+                  (58:16)
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684095" data-lecture-url="/courses/olympic/lectures/1684095" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684095" id="sidebar_link_1684095">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Arrays
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684096" data-lecture-url="/courses/olympic/lectures/1684096" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684096" id="sidebar_link_1684096">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Iterating
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684097" data-lecture-url="/courses/olympic/lectures/1684097" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684097" id="sidebar_link_1684097">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Iterating
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684098" data-lecture-url="/courses/olympic/lectures/1684098" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684098" id="sidebar_link_1684098">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Manipulating
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684099" data-lecture-url="/courses/olympic/lectures/1684099" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684099" id="sidebar_link_1684099">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Manipulating
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684100" data-lecture-url="/courses/olympic/lectures/1684100" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684100" id="sidebar_link_1684100">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Splitting and Joining
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+        <li data-lecture-id="1684101" data-lecture-url="/courses/olympic/lectures/1684101" class="section-item incomplete">
+          <a class="item" data-no-turbolinks="true" href="http://codeup.teachable.com/courses/olympic/lectures/1684101" id="sidebar_link_1684101">
+            <span class="status-container">
+              <span class="status-icon">
+                &nbsp;
+              </span>
+            </span>
+            <div class="title-container">
+              <span class="lecture-icon">
+                <i class="fa fa-file-text"></i>
+              </span>
+              <span class="lecture-name">
+                Exercises: Splitting and Joining
+                
+              </span>
+            </div>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+    
+  </div>
+  
+  <!-- TODO REPLACE WITH GRAYSCALE TEACHABLE LOGO -->
+<!--   <a class='hidden-xs col-md-2' href='http://usefedora.com/?src=lecture-player' src="https://d2oz8i5n9se8ej.cloudfront.net/assets/teachable-logo-coolgrey-ec43de9a3c5ec7893f24334108d8ba7c59fd2ca74ccb07d7125e946e4dd5ec54.svg" id='powered-by-fedora' target='_blank'></a>
+  </a>
+ -->  
+</div>
+
+
+    <!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<!-- Lecture Content -->
+<div class="course-mainbar lecture-content">
+  <h2 id="lecture_heading" class="section-title" data-lecture-id="1684165" data-next-lecture-id="1684166" data-lecture-url="/courses/115047/lectures/1684165" data-next-lecture-url="/courses/115047/lectures/1684166" ,="" data-previous-lecture-url="/courses/115047/lectures/1684164" data-previous-lecture-id="1684164">
+    <i class="fa fa-youtube-play"></i>
+    &nbsp;
+    CSS Box Model and Div/Span
+</h2>
+
+  <!-- Attachment Blocks -->
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+      <!-- Attachment: Video -->
+
+<div class="wistia_responsive_padding">
+  <div class="wistia_responsive_wrapper">
+     <div class="wistia_video_foam_dummy" data-source-container-id="wistia-4d9ndj92b8" style="border: 0px; display: block; height: 0px; margin: 0px; padding: 0px; position: static; visibility: hidden; width: auto;"></div><div class="attachment-wistia-player stillSnap=false wistia_embed WS wistia_async_4d9ndj92b8 stillUrl=https://embed-ssl.wistia.com/deliveries/2736aee4601bd7f4af0a23079d4ea5c8988bd662.jpg?image_crop_resized=1152x720 autoPlay=true wistia_embed_initialized" data-wistia-id="4d9ndj92b8" id="wistia-4d9ndj92b8" data-still-url="https://embed-ssl.wistia.com/deliveries/2736aee4601bd7f4af0a23079d4ea5c8988bd662.jpg?image_crop_resized=1152x720" style="width: 850px; height: 531px;"><div id="wistia_chrome_1759" class="w-chrome" tabindex="0" aria-label="Wistia Video Player - 07_css_box_model.mp4" style="display: inline-block; height: 531px; margin: 0px; padding: 0px; position: relative; vertical-align: top; width: 850px; zoom: 1; outline: none; overflow: hidden; box-sizing: content-box;"><div id="wistia_grid_1770_wrapper" style="display: block; width: 850px; height: 531px;"><div id="wistia_grid_1770_above" style="height: 0px; font-size: 0px; line-height: 0px;"> </div><div id="wistia_grid_1770_main" style="width: 850px; left: 0px; height: 531px; margin-top: 0px;"><div id="wistia_grid_1770_behind"></div><div id="wistia_grid_1770_center" style="width: 100%; height: 100%;"><div id="wistia_video_wrapper_1772" style="display: inline-block; height: 100%; margin: 0px; padding: 0px; position: relative; vertical-align: top; width: 100%; zoom: 1; overflow: hidden;"><div id="wistia_1769_vulcan" class="bp-2000" style="background: transparent; display: block; height: 100%; overflow: hidden; position: relative; width: 100%;"><video crossorigin="anonymous" id="wistia_1769" preload="auto" poster="//fast.wistia.com/assets/images/blank.gif" type="video/mp4" style="background: transparent; display: block; height: 100%; position: relative; visibility: visible; width: 100%; object-fit: fill;"><source id="wistia_1769_source" src="http://embed.wistia.com/deliveries/f2a2fa12e8ccca6911d085430e0ee8af2d117bff/file.mp4" type="video/mp4"></video><div class="w-control-bar w-is-visible w-is-not-transitioning"><div class="w-control-bar__region w-control-bar__region--left"><button id="wistia_smallPlayButton_1817" class="w-control w-control--play w-is-visible playing" alt="Click to pause" tabindex="0" aria-label="Pause" title="Pause" style="position: relative;"><div class="w-control--icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16.5 20" enable-background="new 0 0 16.5 20" xml:space="preserve" class="wistia_vulcan_svg_icon wistia_vulcan_svg_icon_pause">
+<g>
+	<rect x="0" y="0" width="6" height="20"></rect>
+	<rect x="10.5" y="0" width="6" height="20"></rect>
+</g>
+</svg></div></button></div><div class="w-control-bar__region w-control-bar__region--center"><div class="w-control-bar__region w-control-bar__region--thumbscrubber"><div class="w-chapter-title" style="left: 0px;"></div></div><div id="wistia_playbarControl_1833" class="w-control wistia_playbar w-control--playbar w-is-visible" alt="Playbar - click to seek"><div class="w-control--icon"></div><div id="wistia_playbar_mask_1835" class="wistia_playbar_mask" tabindex="0" role="slider" aria-label="playbar" aria-valuenow="0:00"><div id="time_positioner_1842" class="wistia_time_positioner" style="width: 34.4432px;"><div id="time_1843" class="wistia_time" style="right: auto; left: 9px;">1:20</div></div><div id="wistia_playbar_slider_1836" class="wistia_playbar_slider" style="transform: translateX(-47.4562%);"><div id="wistia_playbar_completed_1837" class="wistia_playbar_completed"></div><div id="wistia_playbar_unplayed_mask_1838" class="wistia_playbar_unplayed_mask"><div id="wistia_playbar_unplayed_slider_1839" class="wistia_playbar_unplayed_slider" style="transform: translateX(-2.56565%);"><div id="wistia_playbar_buffered_1840" class="wistia_playbar_buffered"></div><div id="wistia_playbar_background_1841" class="wistia_playbar_background"></div></div></div></div><div id="wistia_hover_line1844" class="wistia_playbar_hover_line" style="left: 0%;"></div></div></div></div><div class="w-control-bar__region w-control-bar__region--centerMobile"><div id="wistia_playbarPlaceholder_1848" class="w-control wistia_playbar_placeholder w-control--playbar-placeholder w-playbar-placeholder w-is-visible"><div class="w-control--icon"></div><div class="wistia_placeholder_time_element wistia_time">1:20</div></div></div><div class="w-control-bar__region w-control-bar__region--right"><div class="w-control-bar__region w-control-bar__region--captions"></div><div class="w-control-bar__region w-control-bar__region--volume"><div id="wistia_volume2_1819" class="w-control w-control--volume w-is-visible number-active-2" style="position: relative;" alt="Volume (100%) - click and drag horizontally to change"><button class="w-control--icon" tabindex="0" aria-label="Mute" title="Mute" style="background: none; cursor: pointer;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="wistia_vulcan_svg wistia_vulcan_svg_volume" x="0px" y="0px" viewBox="0 0 20.3 17.3" style="enable-background:new 0 0 20.3 17.3;" xml:space="preserve">
+  <g class="wistia_vulcan_svg_volume_speaker_group">
+    <g class="wistia_vulcan_svg_volume_speaker_group_inner">
+      <polygon class="wistia_vulcan_svg_volume_speaker" fill="#FFFFFF" points="4,7 0,7 0,11 4,11 8,15 8,3"></polygon>
+      <g class="wistia_vulcan_svg_volume_waves">
+        <path class="wistia_vulcan_svg_volume_wave wistia_vulcan_svg_wave_1" stroke-width="2px" stroke-linecap="round" stroke-miterlimit="10" d="M13.2,3.5c0,0,1.1,2.5,1.1,5s-1.1,5-1.1,5" fill="none" stroke="#ffffff"></path>
+        <path class="wistia_vulcan_svg_volume_wave wistia_vulcan_svg_wave_2" stroke-width="2px" stroke-linecap="round" stroke-miterlimit="10" d="M17,1c0,0,1.7,3.8,1.7,7.5S17,16,17,16" fill="none" stroke="#ffffff"></path>
+        <g class="wistia_vulcan_svg_volume_x wistia_vulcan_svg_volume_wave">
+
+          <path fill="#ffffff" stroke-width="2px" stroke-linecap="round" stroke-miterlimit="10" d="M11.4,11.4c-0.1,0-0.3,0-0.4-0.1c-0.2-0.2-0.2-0.5,0-0.7l4.3-4.3c0.2-0.2,0.5-0.2,0.7,0 c0.2,0.2,0.2,0.5,0,0.7l-4.3,4.3C11.6,11.4,11.5,11.4,11.4,11.4z"></path>
+          <path fill="#ffffff" stroke-width="2px" stroke-linecap="round" stroke-miterlimit="10" d="M15.7,11.4c-0.1,0-0.3,0-0.4-0.1L11,7c-0.2-0.2-0.2-0.5,0-0.7s0.5-0.2,0.7,0l4.3,4.3c0.2,0.2,0.2,0.5,0,0.7,C15.9,11.4,15.8,11.4,15.7,11.4z"></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg></button><div class="wistia_vulcan_volume_slider" tabindex="0" aria-label="Volume Slider" aria-valuemin="0" aria-valuemax="100" role="slider"><div class="wistia_vulcan_volume_track_hit"><div class="wistia_vulcan_volume_track"><div class="wistia_vulcan_volume_level"><div class="wistia_vulcan_volume_grabber_hit"><div class="wistia_vulcan_volume_grabber"><div class="wistia_vulcan_volume_dot_grabber"></div></div></div></div></div></div></div></div></div><div class="w-control-bar__region w-control-bar__region--share"></div><div class="w-control-bar__region w-control-bar__region--settings"><div class="w-component w-component--settings"><div class=""><div class="w-menu w-menu--share" style="left: -40px;"><ul class="w-menu__list"><li class="w-menu__list-item w-menu__list-item--Speed"><button class="w-menu__section-title" tabindex="-1" title="Speed" alt="Speed" aria-label="Speed"><div class="w-menu__section-title_label">Speed</div><div class="w-menu__section-title_value">1x</div></button><div class="w-menu__collapsable-wrapper" style="height: 0px;"><ul class="w-menu__list w-menu__list--collapsable w-is-transitioned"><li class="w-menu__list-item"><button tabindex="-1" class="w-menu__list-link w-menu__list-link--checkable" title="0.5x" alt="0.5x" aria-label="0.5x" data-optionkey="0.5">0.5x</button></li><li class="w-menu__list-item"><button tabindex="-1" class="w-menu__list-link w-menu__list-link--checkable is-checked" title="1x" alt="1x" aria-label="1x" data-optionkey="1">1x</button></li><li class="w-menu__list-item"><button class="w-menu__list-link w-menu__list-link--checkable" tabindex="-1" title="1.5x" alt="1.5x" aria-label="1.5x" data-optionkey="1.5">1.5x</button></li><li class="w-menu__list-item"><button class="w-menu__list-link w-menu__list-link--checkable" tabindex="-1" title="2x" alt="2x" aria-label="2x" data-optionkey="2">2x</button></li><li tabindex="-1" data-tabto=".w-menu__list-item--Quality button" class="w-menu__list-item"></li></ul></div></li><li class="w-menu__list-item w-menu__list-item--Quality"><button class="w-menu__section-title" tabindex="-1" title="Quality" alt="Quality" aria-label="Quality"><div class="w-menu__section-title_label">Quality</div><div class="w-menu__section-title_value">540p</div></button><div class="w-menu__collapsable-wrapper" style="height: 0px;"><ul class="w-menu__list w-menu__list--collapsable w-is-transitioned"><li class="w-menu__list-item"><button class="w-menu__list-link w-menu__list-link--checkable" tabindex="-1" data-optionkey="mp4_h264_177k" title="250p" alt="250p" aria-label="250p">250p</button></li><li class="w-menu__list-item"><button class="w-menu__list-link w-menu__list-link--checkable" tabindex="-1" data-optionkey="mp4_h264_717k" title="360p" alt="360p" aria-label="360p">360p</button></li><li class="w-menu__list-item"><button class="w-menu__list-link w-menu__list-link--checkable" tabindex="-1" data-optionkey="mp4_h264_296k" title="540p" alt="540p" aria-label="540p">540p</button></li><li class="w-menu__list-item" tabindex="-1" data-tabto=".w-menu__list-item--close-settings"></li></ul></div></li><li class="w-menu__list-item w-menu__list-item--close-settings" tabindex="-1" data-tabto=".w-control--settings"></li></ul></div><button class="w-control w-control--settings w-is-visible" title="Settings" alt="Settings" tabindex="0" aria-label="Settings"><div class="w-control--icon"><svg x="0px" y="0px" viewBox="0 0 19 19" enable-background="new 0 0 19 19" class="wistia_vulcan_svg_icon wistia_vulcan_svg_icon_settings"><path d="M17.8,8.8h-2c-0.2-1-0.5-2-1-2.7l1.4-1.5c0.5-0.5,0.5-1.3,0-1.7c-0.5-0.5-1.2-0.5-1.7,0l-1.5,1.4 c-0.7-0.5-1.5-0.8-2.5-1v-2c0-0.7-0.3-1.2-1-1.2s-1,0.5-1,1.2v2.1c-1,0.2-1.8,0.5-2.5,1L4.5,2.8c-0.5-0.5-1.2-0.5-1.7,0 S2.3,4,2.8,4.5l1.5,1.8c-0.5,0.7-0.8,1.6-1,2.6H1.2C0.5,8.8,0,9.2,0,9.8s0.5,1,1.2,1h2.1c0.2,1,0.5,1.6,1,2.3l-1.5,1.4 c-0.5,0.5-0.5,1.2,0,1.7c0.2,0.2,0.5,0.3,0.8,0.3s0.6-0.1,0.8-0.4l1.6-1.5c0.7,0.5,1.5,0.8,2.5,1v2.1c0,0.7,0.3,1.2,1,1.2 s1-0.5,1-1.2v-2c1-0.2,1.8-0.5,2.5-1l1.4,1.4c0.2,0.2,0.5,0.3,0.9,0.3s0.6-0.1,0.8-0.3c0.5-0.5,0.5-1.2,0-1.7l-1.4-1.3 c0.5-0.7,0.9-1.4,1-2.4h2c0.7,0,1.2-0.3,1.2-1S18.5,8.8,17.8,8.8z M9.6,14.1C7,14.1,5,12,5,9.5S7,4.9,9.6,4.9s4.6,2.1,4.6,4.6 S12.1,14.1,9.6,14.1z"></path></svg></div></button></div></div></div><div class="w-control-bar__region w-control-bar__region--airplay"><button id="wistia_airplayButton_1820" class="w-control w-control--fullscreen" alt="Airplay" tabindex="0" aria-label="Airplay" title="Airplay" style="position: relative; user-select: none;"><div class="w-control--icon"><svg width="40px" height="34px" viewBox="0 0 40 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="wistia_vulcan_svg_icon wistia_vulcan_svg_icon_airplay">
+  <g stroke="none" fill="none">
+    <polyline stroke="#000000" stroke-width="2" points="14.52 23 9 23 9 10 32 10 32 23 26.48 23"></polyline>
+    <polygon fill="#000000" points="20.5 20 25.5 26 15.5 26"></polygon>
+  </g>
+</svg></div></button></div><div class="w-control-bar__region w-control-bar__region--chromecast"><div id="wistia_undefined_1826" class="w-control w-control--fullscreen" alt="Chromecast" tabindex="0" aria-label="Chromecast" title="Chromecast" style="position: relative; user-select: none;"><div class="w-control--icon"><svg class="wistia_vulcan_svg_icon_chromecast" width="40px" height="34px" viewBox="0 0 40 34" version="1.1">
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g transform="translate(8.000000, 5.000000)">
+                <path d="M1,18 L1,21 L4,21 C4,19.34 2.66,18 1,18 L1,18 Z M1,14 L1,16 C3.76,16 6,18.24 6,21 L8,21 C8,17.13 4.87,14 1,14 L1,14 Z M1,10 L1,12 C5.97,12 10,16.03 10,21 L12,21 C12,14.92 7.07,10 1,10 L1,10 Z M21,3 L3,3 C1.9,3 1,3.9 1,5 L1,8 L3,8 L3,5 L21,5 L21,19 L14,19 L14,21 L21,21 C22.1,21 23,20.1 23,19 L23,5 C23,3.9 22.1,3 21,3 L21,3 Z" fill="#FFFFFF"></path>
+                <rect x="0" y="0" width="24" height="24"></rect>
+            </g>
+        </g>
+    </g>
+</svg></div></div></div><div class="w-control-bar__region w-control-bar__region--chapters"><div><nothing></nothing></div></div><div class="w-control-bar__region w-control-bar__region--fullscreen"><button id="wistia_fullscreenButton_1827" class="w-control w-control--fullscreen w-is-visible" alt="Fullscreen - click to toggle" tabindex="0" aria-label="Fullscreen" title="Fullscreen" style="position: relative; user-select: none;"><div class="w-control--icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27.5 19.5" enable-background="new 0 0 27.5 19.5" xml:space="preserve" class="wistia_vulcan_svg_icon wistia_vulcan_svg_icon_fullscreen">
+  <g>
+    <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="26.8,5.1 26.8,0.8 20.5,0.8"></polyline>
+    <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="7,0.8 0.7,0.8 0.7,5.1"></polyline>
+    <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="20.5,18.8 26.8,18.8 26.8,14.4	"></polyline>
+    <polyline fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="0.7,14.4 0.7,18.8 7,18.8"></polyline>
+  </g>
+  <rect x="5.8" y="4.8" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="16" height="10"></rect>
+</svg>
+</div></button></div><div class="w-control-bar__region w-control-bar__region--branding"></div><div></div></div></div><div class="w-menu-bar w-is-visible"></div><div id="wistia_1800.thumbnail" tabindex="-1" class="" style="cursor: default; display: none; height: 531px; overflow: hidden; outline: none; position: absolute; width: 850px; left: 0px; top: 0px;"><img id="wistia_1800.thumbnail_img" alt="Wistia video thumbnail - 07_css_box_model.mp4" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/2736aee4601bd7f4af0a23079d4ea5c8988bd662.jpg" style="border: 0px solid rgb(0, 0, 0); display: block; float: none; height: 531px; margin: 0px; max-height: none; max-width: none; padding: 0px; position: absolute; width: 850px; left: 0px; top: 0px;"></div><div id="wistia_loading_1849" class="w-control wistia-loading" style="top: 0px;"><div class="wistia-loading__mask"></div>
+<div class="wistia-loading__svg-position">
+  <svg class="wistia-loading__svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 127 80" enable-background="new 0 0 127 80" xml:space="preserve">
+    <polygon class="wistia-loading__polygon wl-d" points="63,30.3 63,49.7 66,47.7 66,32.3 "></polygon>
+    <polygon class="wistia-loading__polygon wl-c" points="63,30.3 60,28.2 60,51.8 62,50.4 63,49.7 63,30.3 "></polygon>
+    <polygon class="wistia-loading__polygon wl-b" points="57,26.1 57,53.9 60,51.8 60,28.2 "></polygon>
+    <polygon class="wistia-loading__polygon wl-a" points="54,24 54,56 57,53.9 57,26.1 "></polygon>
+    <polygon class="wistia-loading__polygon wl-g" points="73,37.2 72,36.5 72,43.5 73,42.8 75,41.4 75,38.6 "></polygon>
+    <polygon class="wistia-loading__polygon wl-e" points="66,32.3 66,47.7 69,45.6 69,34.4 "></polygon>
+    <polygon class="wistia-loading__polygon wl-h" points="75,38.6 75,41.4 77,40 "></polygon>
+    <polygon class="wistia-loading__polygon wl-f" points="69,34.4 69,45.6 72,43.5 72,36.5 "></polygon>
+  </svg>
+</div></div><div id="wistia_context_menu_1850" class="w-control w-control--context-menu w-context-menu" style="background-color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 10px; left: 0px; line-height: 1.5em; position: absolute; text-shadow: none; top: 0px; width: 200px; z-index: 100000;"><a href="https://wistia.com/about-wistia?about=100959" target="_blank" class="w-context-menu__item w-is-visible aboutWistia w-context-menu__item--aboutWistia" style="display: block; text-decoration: none;">About Wistia</a><a href="http://codeup.teachable.com/courses/olympic/lectures/1684165#" class="w-context-menu__item w-is-visible reportAProblem w-context-menu__item--reportAProblem" style="display: block; text-decoration: none;">Report a problem</a></div><div class="w-tooltip w-tooltip--wistia_vulcan_storyboard" style="position: absolute; overflow: hidden; z-index: 13; width: 0px; height: 0px; bottom: 56px; right: 0px;"><div class="wistia_vulcan_storyboard_view" style="position: absolute; color: rgb(255, 255, 255); overflow: hidden; width: 0px; height: 0px;"><div class="wistia_vulcan_storyboard_time" style="position: absolute; background: rgba(0, 0, 0, 0.34902); font-family: WistiaPlayerOverpass, sans-serif; padding: 2px 4px; color: rgb(255, 255, 255); z-index: 10; bottom: 0px; width: 100%; text-align: center;"></div><div style="display: block; position: absolute; overflow: hidden; top: 0px; right: 0px; bottom: 0px; left: 0px;"><div class="w-storyboard-viewer" style="position: relative; overflow: hidden; width: 150px; height: 93.75px;"><div class="w-storyboard-viewer__storyboard" style="position: absolute; top: 0px; left: 0px; width: 200px; height: 125px; background-position: 0px 0px; background-size: 1500px 1968px; background-image: url(&quot;http://embed.wistia.com/deliveries/1a51aa42870e1a3d2dc713167c5289d71ec0c418/file.jpg&quot;);"></div></div></div></div></div><div class="w-report-a-problem w-is-transparent w-is-hidden"><div class="w-report-a-problem__centered-content"><div class="w-report-a-problem__form-content"><p>Thanks for reporting a problem. We'll attach technical data about this session to help us figure out the issue. Which of these best describes the problem?</p><select class="w-report-a-problem__category" title="Problem Category" aria-label="Problem Category"><option value="">Choose one</option><option value="stuttering">Video plays but frequently stutters</option><option value="low_quality">Video has poor quality</option><option value="fails_to_play">Video fails to play</option><option value="other">Other</option></select><p>Any other details or context?</p><textarea class="w-report-a-problem__description" title="Problem Description" aria-label="Problem Description"></textarea></div><div class="w-report-a-problem__button-row"><div class="w-report-a-problem__form-feedback w-report-a-problem__form-feedback--blank"></div><a href="http://codeup.teachable.com/courses/olympic/lectures/1684165#" class="w-report-a-problem__cancel">Cancel</a><button class="w-report-a-problem__send">Send</button></div></div></div><div class="w-status-bar">message</div><div data-testid="big-play-button"></div></div></div></div><div id="wistia_grid_1770_front"></div><div id="wistia_grid_1770_top_inside"><div id="wistia_grid_1770_top" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div><div id="wistia_grid_1770_bottom_inside"><div id="wistia_grid_1770_bottom" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div><div id="wistia_grid_1770_left_inside"><div id="wistia_grid_1770_left" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div><div id="wistia_grid_1770_right_inside"><div id="wistia_grid_1770_right" style="height: 0px; font-size: 0px; line-height: 0px;"> </div></div></div><div id="wistia_grid_1770_below" style="height: 0px; font-size: 0px; line-height: 0px;"> </div><style id="wistia_1771_style" type="text/css" class="wistia_injected_style">#wistia_grid_1770_wrapper{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;font-family:Arial,sans-serif;font-size:14px;height:100%;position:relative;text-align:left;width:100%;}
+#wistia_grid_1770_wrapper *{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+#wistia_grid_1770_above{position:relative;}
+#wistia_grid_1770_main{display:block;height:100%;position:relative;}
+#wistia_grid_1770_behind{height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_1770_center{height:100%;overflow:hidden;position:relative;width:100%;}
+#wistia_grid_1770_front{display:none;height:100%;left:0;position:absolute;top:0;width:100%;}
+#wistia_grid_1770_top_inside{position:absolute;left:0;top:0;width:100%;}
+#wistia_grid_1770_top{width:100%;position:absolute;bottom:0;left:0;}
+#wistia_grid_1770_bottom_inside{position:absolute;left:0;bottom:0;width:100%;}
+#wistia_grid_1770_bottom{width:100%;position:absolute;top:0;left:0;}
+#wistia_grid_1770_left_inside{height:100%;position:absolute;left:0;top:0;}
+#wistia_grid_1770_left{height:100%;position:absolute;right:0;top:0;}
+#wistia_grid_1770_right_inside{height:100%;right:0;position:absolute;top:0;}
+#wistia_grid_1770_right{height:100%;left:0;position:absolute;top:0;}
+#wistia_grid_1770_below{position:relative;}</style></div></div></div>
+    </div>
+</div>
+
+<!-- Video actions -->
+
+
+    
+  </div>
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+      <div class="attachment-data"></div>
+<div class="lecture-text-container">
+<p></p><p>Every element in an HTML document is represented as a rectangular box. The box model describes a boxes size and how it will interact with other boxes in the document. Several CSS properties come into play when examining the box for a particular element. There are content width and height, padding, border, and margin, and we will be discussing each of these properties in this lesson.
+</p>
+<p>For more information on anything we cover here, look no further than the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/box_model" target="_blank">Mozilla Developer Network</a> or<a href="http://css-tricks.com/the-css-box-model/" target="_blank">CSS-Tricks</a>.<img src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/xuylyFkRAiLAr5WAvi3g" class="img-responsive" style="opacity: 0.5;">
+</p>
+<h2><br></h2>
+<h2>Content Area Width and Height</h2>
+<p>The content area is the innermost part of the box for a particular element. It is governed by the width and height properties of the element.
+</p>
+<h3>width</h3>
+<blockquote>The width CSS property specifies the width of the content area of an element. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width" target="_blank">More Info</a>.
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-tag"&gt;element&lt;/span&gt; &lt;span class="hljs-rules"&gt;{ &lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;width&lt;/span&gt;: &lt;span class="hljs-number"&gt;200px&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;; }
+&lt;/code&gt;
+</pre>
+<h3>height</h3>
+<blockquote>The height CSS property specifies the height of the content area of an element. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height" target="_blank">More Info</a>.
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-tag"&gt;element&lt;/span&gt; &lt;span class="hljs-rules"&gt;{ &lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;height&lt;/span&gt;: &lt;span class="hljs-number"&gt;200px&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;; }
+&lt;/code&gt;
+</pre>
+<h2>Padding</h2>
+<p>Padding is the space between the edge of the content area and the border.
+</p>
+<blockquote>The padding CSS property sets the required padding space on all sides of an element. The padding property is a shorthand to avoid setting each side separately (padding-top, padding-right, padding-bottom, padding-left). <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">More Info</a>.
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;padding&lt;/span&gt;: &lt;span class="hljs-number"&gt;10px&lt;/span&gt;&lt;/span&gt;;              &lt;span class="hljs-comment"&gt;/* on all sides 10px padding */&lt;/span&gt;
+&lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;padding&lt;/span&gt;: &lt;span class="hljs-number"&gt;10px&lt;/span&gt; &lt;span class="hljs-number"&gt;20px&lt;/span&gt;&lt;/span&gt;;         &lt;span class="hljs-comment"&gt;/*  top and bottom 10px padding  */&lt;/span&gt;
+                            &lt;span class="hljs-comment"&gt;/*  left and right 20px padding  */&lt;/span&gt;
+&lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;padding&lt;/span&gt;: &lt;span class="hljs-number"&gt;1px&lt;/span&gt; &lt;span class="hljs-number"&gt;3px&lt;/span&gt; &lt;span class="hljs-number"&gt;30px&lt;/span&gt; &lt;span class="hljs-number"&gt;5px&lt;/span&gt;&lt;/span&gt;;  &lt;span class="hljs-comment"&gt;/*  top    1px  padding  */&lt;/span&gt;
+                            &lt;span class="hljs-comment"&gt;/*  right  3px  padding  */&lt;/span&gt;
+                            &lt;span class="hljs-comment"&gt;/*  bottom 30px padding  */&lt;/span&gt;
+                            &lt;span class="hljs-comment"&gt;/*  left   5px  padding  */&lt;/span&gt;
+&lt;/code&gt;
+</pre>
+<h2>Border</h2>
+<p>Border is the area between the edge of the padding and the margin.
+</p>
+<blockquote>The border CSS property is a shorthand property for setting the individual border property values in a single place in the style sheet. border can be used to set the values for one or more of: border-width, border-style, border-color. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">More Info</a>
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-tag"&gt;element&lt;/span&gt; &lt;span class="hljs-rules"&gt;{ &lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;border&lt;/span&gt;: &lt;span class="hljs-number"&gt;1px&lt;/span&gt; solid black } &lt;span class="hljs-comment"&gt;/* solid, black border of 1px thickness */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;
+</pre>
+<h2>Margin</h2>
+<p>Margin is the area outside of the border. The margin is not used to calculate the overall size of an element but instead affects the other content around the box.
+</p>
+<blockquote>The margin CSS property sets the margin for all four sides. It is a shorthand to avoid setting each side separately with the other margin properties: margin-top, margin-right, margin-bottom, and margin-left. <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">More Info</a>
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;margin&lt;/span&gt;: &lt;span class="hljs-number"&gt;10px&lt;/span&gt;&lt;/span&gt;;              &lt;span class="hljs-comment"&gt;/* all sides 10px margin */&lt;/span&gt;
+&lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;margin&lt;/span&gt;: &lt;span class="hljs-number"&gt;5px&lt;/span&gt; &lt;span class="hljs-number"&gt;20px&lt;/span&gt;&lt;/span&gt;;          &lt;span class="hljs-comment"&gt;/* top and bottom 5px, left and right 20px margin */&lt;/span&gt;
+&lt;span class="hljs-rule"&gt;&lt;span class="hljs-attribute"&gt;margin&lt;/span&gt;: &lt;span class="hljs-number"&gt;10px&lt;/span&gt; &lt;span class="hljs-number"&gt;3px&lt;/span&gt; &lt;span class="hljs-number"&gt;30px&lt;/span&gt; &lt;span class="hljs-number"&gt;5px&lt;/span&gt;&lt;/span&gt;; &lt;span class="hljs-comment"&gt;/* top 10px, right 3px, bottom 30px, left 5px margin */&lt;/span&gt;
+&lt;/code&gt;
+</pre>
+<h2>Overall Size</h2>
+<p>The overall size for the box of an element is calculated as follows:
+</p>
+<pre>&lt;code&gt;height = height + padding-top + padding-bottom + border-top + border-bottom
+width = width + padding-left + padding-right + border-left + border-right
+&lt;/code&gt;
+</pre>
+<h2>Divs and Spans</h2>
+<p>When building a web page, sometimes it is helpful to place content in a container without any semantic meaning for the purpose of applying styles. This is where <code>div</code> and <code>span</code> elements come into play.
+</p>
+<h3>Div</h3>
+<blockquote>The HTML <code>&lt;div&gt;</code> element (or HTML Document Division Element) is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes) or because they share attribute values, such as lang. It should be used only when no other semantic element (such as <code>&lt;article&gt;</code> or <code>&lt;nav&gt;</code>) is appropriate. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">More Info</a>
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-tag"&gt;&lt;&lt;span class="hljs-title"&gt;div&lt;/span&gt;&gt;&lt;/span&gt;
+    &lt;span class="hljs-tag"&gt;&lt;&lt;span class="hljs-title"&gt;p&lt;/span&gt;&gt;&lt;/span&gt;Any kind of content here.&lt;span class="hljs-tag"&gt;&lt;/&lt;span class="hljs-title"&gt;p&lt;/span&gt;&gt;&lt;/span&gt;
+&lt;span class="hljs-tag"&gt;&lt;/&lt;span class="hljs-title"&gt;div&lt;/span&gt;&gt;&lt;/span&gt;
+&lt;/code&gt;
+</pre>
+<h3>Span</h3>
+<blockquote>The HTML <code>&lt;span&gt;</code> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes) or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate. <code>&lt;span&gt;</code> is very much like a <code>&lt;div&gt;</code> element, but<code>&lt;div&gt;</code> is a block-level element whereas a <code>&lt;span&gt;</code> is an inline element. <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span" target="_blank">More Info</a>
+</blockquote>
+<pre>&lt;code&gt;&lt;span class="hljs-tag"&gt;&lt;&lt;span class="hljs-title"&gt;p&lt;/span&gt;&gt;&lt;/span&gt;&lt;span class="hljs-tag"&gt;&lt;&lt;span class="hljs-title"&gt;span&lt;/span&gt;&gt;&lt;/span&gt;Some text&lt;span class="hljs-tag"&gt;&lt;/&lt;span class="hljs-title"&gt;span&lt;/span&gt;&gt;&lt;/span&gt;&lt;span class="hljs-tag"&gt;&lt;/&lt;span class="hljs-title"&gt;p&lt;/span&gt;&gt;&lt;/span&gt;&lt;/code&gt;
+</pre><p></p>
+</div>
+
+    
+  </div>
+
+  <div class="lecture-attachment">
+    <div class="attachment-data"></div>
+    
+  </div>
+
+
+<!-- Comments -->
+
+  <div class="lecture-attachment">
+    <div class="comments attachment-block-wrapper">
+  
+    <h5 class="comments__heading">Post a comment</h5>
+    <div class="comments__wrapper">
+      <div id="comments-settings" class="comments-settings" data-images-enabled="false" data-image-api-key="null"></div>
+      <div class="comments__block comments__block--indent-level-0 comments__block--student comments__block--new">
+  <img class="gravatar" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/97d5e40e3808e9c49a15cc6ac71ba84e" alt="Phillip Palatas">
+  <div class="comments__block-box">
+    <div class="comments__block-box__meta">
+      <div class="comments__block-box__meta-name">Phillip Palatas</div>
+      <label class="comments__block-box__meta-tag comments__block-box__meta-tag-instructor label label-default">Instructor</label>
+      <div class="comments__block-box__meta-now">now</div>
+    </div>
+    <form action="http://codeup.teachable.com/api/v1/comments" class="new-comment-form" method="post" target="_blank" data-type="json" data-remote="true">
+        <div class="alert alert-success comments__block-box__alert--posted">
+          <i class="fa fa-check"></i> Your comment was posted.
+        </div>
+        <div class="alert alert-warning comments__block-box__alert--review">
+          <i class="fa fa-check"></i> Your comment was posted, but it needs to be approved by the school owner before it shows up.
+        </div>
+        <div class="alert alert-danger comments__block-box__alert--failed">
+          Sorry, your comment could not be posted at this time :(
+        </div>
+        <input type="hidden" name="comments[commentable_type]" value="Attachment">
+        <input type="hidden" name="comments[commentable_id]" value="3254699">
+        
+        <textarea placeholder="Leave a comment..." name="comments[body]"></textarea>
+        
+        <input class="btn btn-primary pull-right btn-md" type="submit" value="Post Comment">
+    </form>
+  </div>
+</div>
+
+
+    </div>
+  
+
+  <h5 class="comments__heading">0 comments</h5>
+  <div class="comments__wrapper">
+    
+  </div>
+
+</div>
+
+
+  </div>
+
+
+
+<div id="empty_box"></div>
+<!-- Scroll to current lecture link position in sidebar -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- No lecture footer in the new redesign -->
+
+    
+  
+
+<iframe name="filepicker_comm_iframe" id="filepicker_comm_iframe" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/saved_resource.html" style="display: none;"></iframe><iframe name="fpapi_comm_iframe" id="fpapi_comm_iframe" src="./CSS Box Model and Div_Span Content Area Width and HeightPaddingBorderMarginOverall SizeDivs and Spans _ Codeup_files/saved_resource(1).html" style="display: none;"></iframe><style id="wistia_1773_style" type="text/css" class="wistia_injected_style">#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 div, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 span, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ul, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 li, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 label, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 button, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 img, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 a, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 svg, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 p {  box-shadow: none;  color: inherit;  display: block;  float: none;  font-family: WistiaPlayerOverpass, sans-serif;  font-style: none;  font-weight: normal;  font-size: 14px;  letter-spacing: 0;  line-height: inherit;  margin: 0;  padding: 0;  position: static;  text-decoration: none;  text-transform: none;  text-shadow: none;  word-wrap: normal; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 a {  border: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 p {  margin: 1.4em 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 a, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 span, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 svg {  display: inline; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ul, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ol, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 li {  background-attachment: scroll;  background-image: none;  background-position: 0 0;  background-repeat: no-repeat;  background-size: 100% 100%;  list-style-type: none;  position: static; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ul:before, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ol:before, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 li:before {    display: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ul:after, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 ol:after, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 li:after {    display: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 label {  background-attachment: scroll;  background-image: none;  background-position: 0 0;  background-repeat: no-repeat;  background-size: 100% 100%;  float: none;  outline: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 button {  background-attachment: scroll;  background-image: none;  background-position: 0 0;  background-repeat: no-repeat;  background-size: 100% 100%;  border: 0;  border-radius: 0;  outline: none;  position: static; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 img {  background-attachment: scroll;  background-image: none;  background-position: 0 0;  background-repeat: no-repeat;  background-size: 100% 100%;  border: 0;  display: inline-block;  vertical-align: top; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg {  position: absolute;  top: 6px;  left: 9px;  width: 35px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon polyline,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon polygon,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon rect,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon path,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon circle, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg polyline,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg polygon,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg rect,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg path,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg circle {    stroke: #ffffff; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon polygon, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg polygon {    fill: #ffffff; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_captions {  top: 7px;  left: 7px;  width: 27px;  height: 19px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_fullscreen {  top: 8px;  left: 7px;  width: 27px;  height: 19px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_airplay {  top: 0px;  left: 0px;  width: 40px;  height: 34px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_social {  width: 23px;  height: 22px;  top: 6px;  left: 9px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_settings {  width: 18px;  height: 19px;  fill: #ffffff;  top: 8px;  left: 11px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_chapters {  width: 22px;  height: 19px;  fill: #ffffff;  top: 8px;  left: 9px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_pause {  fill: #ffffff;  width: 12px;  left: 21px;  top: 8px;  height: 18px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_play {  fill: #ffffff;  width: 12px;  height: 18px;  left: 22px;  top: 8px;  stroke-width: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-svg--menu {  width: 15px;  height: 17px;  position: static;  vertical-align: middle; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--volume {  width: 40px;  height: 34px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--volume .w-control--icon {    height: 34px;    width: 40px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_volume {  position: absolute;  top: 9px;  left: 9px;  width: 21px;  height: 17px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_icon_volume {  width: 24px;  left: 9px;  top: 5px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_volume_hat_group {  fill: #ffffff;  opacity: 0;  -webkit-transform: translateY(5px);          transform: translateY(5px);  -webkit-transition: opacity 100ms, -webkit-transform 100ms;  transition: opacity 100ms, -webkit-transform 100ms;  transition: transform 100ms, opacity 100ms;  transition: transform 100ms, opacity 100ms, -webkit-transform 100ms; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-0 .wistia_vulcan_svg_volume_speaker_group {  -webkit-transform: translateX(2px);          transform: translateX(2px); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-0 .wistia_vulcan_svg_volume_x {  opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-1 .wistia_vulcan_svg_volume_speaker_group {  -webkit-transform: translateX(2px);          transform: translateX(2px); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-1 .wistia_vulcan_svg_wave_1 {  opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-2 .wistia_vulcan_svg_volume_speaker_group {  -webkit-transform: translateX(0);          transform: translateX(0); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-2 .wistia_vulcan_svg_wave_1 {  opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .number-active-2 .wistia_vulcan_svg_wave_2 {  opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_volume_speaker_group {  -webkit-transition: -webkit-transform 100ms;  transition: -webkit-transform 100ms;  transition: transform 100ms;  transition: transform 100ms, -webkit-transform 100ms; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_volume_speaker_group_inner {  -webkit-transition: -webkit-transform 100ms;  transition: -webkit-transform 100ms;  transition: transform 100ms;  transition: transform 100ms, -webkit-transform 100ms;  -webkit-transform: translateY(0) scale(1);          transform: translateY(0) scale(1); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_volume_waves {  opacity: 1;  -webkit-transition: opacity 0s 100s;  transition: opacity 0s 100s; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_svg_volume_wave {  opacity: 0;  -webkit-transition: opacity 0s 100ms;  transition: opacity 0s 100ms; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_slider {  position: absolute;  left: 0;  width: 40px;  height: 0;  overflow: hidden;  bottom: 34px;  border: none;  outline: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_slider.w-is-visible {    height: 110px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_track_hit {  position: absolute;  bottom: 15px;  height: 80px;  left: 0;  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_track {  position: absolute;  bottom: 0;  height: 100%;  left: 19px;  width: 2px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_level {  position: absolute;  bottom: 0;  height: 0;  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_grabber_hit {  position: absolute;  top: 0;  left: -19px;  margin-top: -15px;  height: 30px;  width: 40px;  border-radius: 50%; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_grabber_hit:hover .wistia_vulcan_volume_grabber {    -webkit-transform: scale(1.15);            transform: scale(1.15); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_grabber {  position: absolute;  top: 50%;  left: 50%;  margin-top: -6px;  margin-left: -6px;  height: 12px;  width: 12px;  border-radius: 50%;  -webkit-transition: -webkit-transform 100ms ease;  transition: -webkit-transform 100ms ease;  transition: transform 100ms ease;  transition: transform 100ms ease, -webkit-transform 100ms ease; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_grabber.is-mousedown {    -webkit-transform: scale(1.15);            transform: scale(1.15); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_dot_grabber {  position: absolute;  top: 2px;  left: 2px;  border-radius: 50%;  width: 8px;  height: 8px;  background: rgba(0, 0, 0, 0.8); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_slider {  background-color: rgba(0, 0, 0, 0.55); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_level {  background-color: white; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_track {  background-color: white; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_volume_grabber {  background-color: white; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar {  position: relative;  width: 100%;  height: 34px;  -webkit-user-select: none;     -moz-user-select: none;      -ms-user-select: none;          user-select: none;  overflow: hidden; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar.wistia_dragging .wistia_player {    -webkit-transition: left 0;    transition: left 0; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar.wistia_dragging .wistia_scrub_bar {    -webkit-transition: left 0;    transition: left 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-placeholder {  position: relative;  cursor: arrow;  width: 100%;  display: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_mask {  position: absolute;  left: 0;  right: 0;  bottom: 0;  top: 0;  overflow: hidden;  outline: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_slider {  position: absolute;  width: 200%;  top: 0;  bottom: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_completed {  position: absolute;  left: 0;  right: 50%;  top: 0;  bottom: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_unplayed_mask {  overflow: hidden;  position: absolute;  left: 50%;  right: 0;  top: 0;  bottom: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_unplayed_slider {  position: absolute;  left: 0;  top: 0;  width: 201%;  bottom: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_buffered {  position: absolute;  left: 0;  right: 50%;  bottom: 0;  top: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_background {  position: absolute;  right: 0;  left: 50%;  top: 0;  bottom: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_time_positioner {  position: absolute;  left: 0;  bottom: 0;  top: 0;  width: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_time {  bottom: 9px;  cursor: pointer;  color: white;  display: inline-block;  -webkit-font-smoothing: antialiased;  font-size: 15px;  line-height: 1.1em;  letter-spacing: .01em;  position: absolute;  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);  white-space: nowrap;  width: auto;  z-index: 2; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_placeholder_time_element {  padding-left: 5px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_hover_line {  position: absolute;  top: 0;  bottom: 0;  width: 36px;  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%);  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.12) 100%);  opacity: 0;  -webkit-transform: translateX(-36px);          transform: translateX(-36px);  -webkit-transition: opacity 200ms ease;  transition: opacity 200ms ease; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-is-visible .wistia_playbar_hover_line {  -webkit-transition: none;  transition: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_playbar_hover_line--is-visible {  opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .wistia_playbar {  position: absolute;  bottom: 34px;  left: 0;  height: 15px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .wistia_playbar .wistia_time {    display: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .wistia_playbar_placeholder.w-is-visible {  display: block; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 {  /* W Menu with grid */ }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .is-keyboard-focused [tabindex="0"]:focus,  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .is-keyboard-focused button:focus {    box-shadow: inset 0 0 0 2px white; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_menuview {    position: relative;    color: white; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_menuview_items {    padding: 7px 0;    margin: 0;    box-sizing: border-box; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_menuview_item {    color: white;    font-size: 14px;    font-family: WistiaPlayerOverpass, sans-serif;    -webkit-font-smoothing: antialiased;    line-height: 26px;    letter-spacing: 0;    word-wrap: normal;    text-decoration: none;    text-transform: none;    cursor: pointer;    padding: 0 30px 0 30px;    margin: 0;    white-space: nowrap;    outline: none;    text-decoration: none;    border-bottom: none;    display: block;    background: none;    border: none; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_menuview_item a {      text-decoration: none;      border-bottom: none;      outline: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_menuview_item--is-active {    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJ1JREFUeNpiYKAA/P//vwGIzwOxAgOlAGiIw38EeA/iU2KYANSQ/2iGCpBr4P7/mCCBXMP6sRg2n1zDArAYdp4sr4JiEke4GWBTbADE90EuwGPgeSyuC8AVY/eRFDUQGW79pMTYeli44Ao3UmMNFtgJOMJNgVCAY9OICwQQG4sGaGH5n+hwI5Cl9uMwbD8lebWfavkUR7gSXZIABBgAXdzjGyTOH2QAAAAASUVORK5CYII=) 12px center no-repeat;    background-size: 10px 8px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_back_element {    text-decoration: underline;    position: relative;    font-size: 10px;    cursor: pointer; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_title_element {    color: white;    font-size: 14px;    font-family: WistiaPlayerOverpass, sans-serif;    -webkit-font-smoothing: antialiased;    line-height: 26px;    letter-spacing: 0;    word-wrap: normal;    text-decoration: none;    text-transform: none;    padding: 4px 10px 5px 29px;    display: block;    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAYAAAC9BQwsAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAF1JREFUeNpiYCAC/P//3wCI74NoBmIBVNP7/xDwnijNaJr+I2lWIFUTCMwf1UQTTVCN+7FoAhkkQEijABCfx6L5/KhmemtmwqWRkZHxA5ByBOILDOQANJvhTgUIMADM8e7U1DESegAAAABJRU5ErkJggg==) 12px center no-repeat;    background-size: 7px 10px;    background-color: rgba(0, 0, 0, 0.3);    cursor: pointer;    box-sizing: border-box; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_title_element--is-hidden {    display: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_vulcan_back_arrow {    display: inline-block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu {    position: absolute;    z-index: 9;    bottom: 34px;    background: rgba(0, 0, 0, 0.55);    height: 0;    overflow: hidden;    width: 120px;    opacity: 0; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu.w-is-visible {      height: auto; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu.w-is-transitioned {      opacity: 1; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-is-visible .w-menu {    -webkit-transition: opacity 200ms ease;    transition: opacity 200ms ease; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu--chapters {    height: auto; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list {    margin: 0;    padding: 0;    list-style: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list--ordered {    list-style-type: decimal;    list-style-position: inside;    color: white;    padding: 0; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list--collapsable {    overflow: hidden;    -webkit-transition: opacity 200ms ease, max-height 200ms ease;    transition: opacity 200ms ease, max-height 200ms ease;    opacity: 0; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list--collapsable.w-is-transitioned {      opacity: 1; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-item {    text-align: left;    padding: 0;    margin: 0; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-item:before {      display: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-item--close {    list-style: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-item--ordered {    list-style-type: decimal;    list-style-position: inside;    display: list-item; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link {    display: block;    color: white;    text-decoration: none;    color: white;    font-size: 14px;    font-family: WistiaPlayerOverpass, sans-serif;    -webkit-font-smoothing: antialiased;    line-height: 26px;    letter-spacing: 0;    word-wrap: normal;    text-decoration: none;    text-transform: none;    line-height: 34px;    height: 34px;    cursor: pointer;    -webkit-transition: background-color 50ms ease;    transition: background-color 50ms ease;    border-bottom: none;    background: none;    border: none;    text-align: left;    box-sizing: border-box;    width: 100%;    outline: none;    padding: 0;    margin: 0;    overflow: hidden; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link:focus {      outline: none;      border: none; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link:hover {      background-color: rgba(0, 0, 0, 0.3); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link--padded {    padding: 0 12px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link--inline {    display: inline;    width: auto;    background: none;    padding: 0 0 0 7px; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link--inline:hover {      background: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link--checkable {    padding-left: 40px; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-link--checkable.is-checked {      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJ1JREFUeNpiYKAA/P//vwGIzwOxAgOlAGiIw38EeA/iU2KYANSQ/2iGCpBr4P7/mCCBXMP6sRg2n1zDArAYdp4sr4JiEke4GWBTbADE90EuwGPgeSyuC8AVY/eRFDUQGW79pMTYeli44Ao3UmMNFtgJOMJNgVCAY9OICwQQG4sGaGH5n+hwI5Cl9uMwbD8lebWfavkUR7gSXZIABBgAXdzjGyTOH2QAAAAASUVORK5CYII=);      background-position: 18px center;      background-repeat: no-repeat;      background-size: 10px 8px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-item-link {    line-height: 32px;    -webkit-transition: background-color 50ms ease;    transition: background-color 50ms ease;    cursor: pointer; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list-item-link:hover {      background: rgba(0, 0, 0, 0.3); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__icon {    width: 40px;    display: inline-block;    text-align: center;    line-height: 34px;    vertical-align: middle;    margin-bottom: 3px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__section-title {    color: white;    font-size: 14px;    font-family: WistiaPlayerOverpass, sans-serif;    -webkit-font-smoothing: antialiased;    line-height: 26px;    letter-spacing: 0;    word-wrap: normal;    text-decoration: none;    text-transform: none;    line-height: 34px;    height: 34px;    display: block;    box-sizing: border-box;    padding: 0 12px;    background: none;    border: none;    width: 100%;    margin: 0;    text-align: left;    outline: none;    cursor: pointer;    -webkit-transition: background-color 50ms ease;    transition: background-color 50ms ease; }    #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__section-title:hover {      background-color: rgba(0, 0, 0, 0.3); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__section-title_label {    display: inline-block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__section-title_value {    float: right;    opacity: .7; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__collapsable-wrapper {    overflow: hidden;    height: 0;    -webkit-transition: height 150ms ease;    transition: height 150ms ease; }#wistia-4d9ndj92b8 .stats-table {  width: 100%;  border-spacing: 0;  border-collapse: separate;  font-family: "WistiaPlayerOverpass, sans-serif"; }#wistia-4d9ndj92b8 .stats-table--monospace {  font-family: monospace; }#wistia-4d9ndj92b8 .stats-table__cell {  background: white;  padding: 5px;  font-size: 16px;  text-align: center;  font-weight: 700; }  #wistia-4d9ndj92b8 .stats-table__cell.is-active {    background: #bbe5d3; }#wistia-4d9ndj92b8 .stats-table__cellsmall {  display: block;  font-size: 12px;  line-height: 20px;  font-weight: 400; }#wistia-4d9ndj92b8 .stats-table__cell--label {  text-align: left; }#wistia-4d9ndj92b8 .stats-table__head th {  padding: 10px 0; }#wistia-4d9ndj92b8 .stats {  margin-top: 20px;  margin-bottom: 20px;  font-family: WistiaPlayerOverpass, sans-serif; }#wistia-4d9ndj92b8 .stats__header {  padding: 10px 0; }#wistia-4d9ndj92b8 .stats__body {  border: 1px solid black;  padding: 10px; }#wistia-4d9ndj92b8 .stats__view {  display: none; }  #wistia-4d9ndj92b8 .stats__view.is-active {    display: block; }.stats-table--scrollable {  max-height: 300px;  overflow-y: scroll; }  .stats-table--scrollable tr {    width: 100%; }.stats-table__head {  border-bottom: 1px solid black; }.hls-stats__filters {  border-bottom: 1px solid black;  padding: 10px; }.hls-stats__filterbutton {  border: 1px solid black;  background: white;  margin-right: 5px; }  .hls-stats__filterbutton.is-active {    background: #bbe5d3; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar {  width: 100%;  position: absolute;  bottom: 0;  left: 0;  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  z-index: 11;  opacity: 0;  -webkit-transition: opacity 200ms ease;  transition: opacity 200ms ease;  pointer-events: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar.w-is-visible {    opacity: 1;    pointer-events: auto; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar .w-menu * {    color: #fff;    font-family: WistiaPlayerOverpass, Sans-Serif; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar__region {  -webkit-box-flex: 0;  -webkit-flex-grow: 0;      -ms-flex-positive: 0;          flex-grow: 0;  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  position: relative; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar__region.is-hidden {    display: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar__region--center {  -webkit-box-flex: 1;  -webkit-flex-grow: 1;      -ms-flex-positive: 1;          flex-grow: 1;  position: static; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar__region--centerMobile {  -webkit-box-flex: 1;  -webkit-flex-grow: 1;      -ms-flex-positive: 1;          flex-grow: 1;  display: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar__region--thumbscrubber {  position: absolute;  bottom: 34px;  left: 0;  right: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-component {  position: relative; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--icon {  z-index: 1;  padding: 0;  border: none;  border-radius: 0;  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  outline: none;  margin: 0;  display: none;  height: 34px;  width: 40px;  top: inherit;  cursor: pointer; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control.w-is-visible, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-is-visible.w-control--icon {    display: block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control:focus, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--icon:focus {    outline: none;    border: none;    padding: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--icon {  display: block;  position: relative; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--chapters {  -webkit-box-ordinal-group: 1;  -webkit-order: 0;      -ms-flex-order: 0;          order: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--captions,#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-component--captions {  -webkit-box-ordinal-group: 2;  -webkit-order: 1;      -ms-flex-order: 1;          order: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--volume {  -webkit-box-ordinal-group: 3;  -webkit-order: 2;      -ms-flex-order: 2;          order: 2; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--share,#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-component--share {  -webkit-box-ordinal-group: 4;  -webkit-order: 3;      -ms-flex-order: 3;          order: 3; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--settings,#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-component--settings {  -webkit-box-ordinal-group: 5;  -webkit-order: 4;      -ms-flex-order: 4;          order: 4; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--fullscreen {  -webkit-box-ordinal-group: 6;  -webkit-order: 5;      -ms-flex-order: 5;          order: 5; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--branding {  -webkit-box-ordinal-group: 7;  -webkit-order: 6;      -ms-flex-order: 6;          order: 6;  width: 100px;  background-size: 110px 34px;  background-position: center center;  background-repeat: no-repeat;  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAABECAMAAADdsaudAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNQTFRFAAAA////////////////////////////////////////////////////////////////t5XiggAAABB0Uk5TABAgMEBQYHCAj5+vv8/f7yMagooAAAM2SURBVGje7ZjRlqsgDEUDIkUNcv7/a++DCgGx047Oy105T211iZuEk6REKpVKpVKpVCqVSqVSqVSqP5OZ/mO4F/x/yzYm8AbJPMsLlpnHahf2Gzwz5x/dvAJp8YaIaOCOiIhoYm4SZAbcX6MxAGyviXq5ACDKexMQjgtHSi/Ylcb9EScREREDXB+G1P7yay1LOGlmjnJ9WgEZuhUAhvLdA7ANHBeG8B3cC8fjbmtIeCMu65kSUwAVLQML1XAeQJqc8/MGZ4+NA8DH5z7c2jz9jtw7uP00GACvEmwgASnT2py1BY7zDZaDXG6PZLUzFZzfVjbP0PlrtmTLGV8lSwCKk075YoErG0M0fAXHAKf2pt9ruoTzMryu2EmipViKSTmsfTj6Bs4B8HIv72r+iY0olmOwAhONxVJ8SaIgLSjZ38DNwEq2XvyeYtdMhiZ3TbYTKw1UcBe4GUAcvoez2/WlqTW3+qwz3eKIiMbhlHvL9jLhcIyhztgdziYA6fU13P7YtrLeo6syM85bW0FDctRYypExOXPk+RB1bisxbL+DM2lPg3hUl2fw3KGqnOaXOwIUgHREMNZ2UsHRsOYK/jlcbgf8Y4W8L7uIV81Haz1scLcUL2uShCOzuTCbL+DWHLD1sULeQ5sSqtTYKMSObstH+RIVHNEQ0Xah7+HEUQuyTXgUbJziqRiYBITSaRFNQDKu6jIbuO0HfN6hcG1qr8cClQcR4ZypqYarBTAK1/ZzFZkT3NZjmg/hbOPYDxVy/2MV3ywlyhUZiPVNZzgKYjt+gpvfrv9w88y9Uh+aHZFx6cCZhuYNnEnAlE3bxWfGuouxJ5peeG01o9aeVuDCFc0buFA/3T9SyO1nbGQa/9w67qELl9tm32TXG7jW/Z+oBia+G+Xa8UGeH9savZwK4rj/D1NX42s43+wUve4X8j4b9xLCtgbGzZmvRh6AeT1t0zVc7P2ZcnOs6807y0Wuc7OYr4uFgBMz4odF3J3dcbpbyE9suWvuVowmTdJ0AUfD/u9XCh/2lp0B9fZY52r95Kvt93ofrHyCcSEE11mv3qDBuaF7QVxTqVQqlUqlUqlUKpVKpVKprvQPULZVy61arz0AAAAASUVORK5CYII="); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-component--branding {  -webkit-box-ordinal-group: 7;  -webkit-order: 6;      -ms-flex-order: 6;          order: 6; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--play {  width: 53px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical {  background: none !important; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--context-menu {  height: auto; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--volume {  z-index: 11; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--playbar-placeholder {  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--playbar {  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .w-control-bar__region--centerMobile {  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .w-control-bar__region--center {  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  width: 0;  -webkit-box-flex: 0;  -webkit-flex-grow: 0;      -ms-flex-positive: 0;          flex-grow: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control.wistia-loading, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia-loading.w-control--icon {  background: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control.wistia-loading:hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia-loading.w-control--icon:hover {    background: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading {  position: absolute;  z-index: 10;  top: 0;  right: 0;  left: 0;  bottom: 0;  display: none;  opacity: 0;  -webkit-transition: opacity 200ms ease;  transition: opacity 200ms ease;  width: auto;  height: auto;  cursor: default; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading.w-is-visible {    display: block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading.w-is-transitioned {    opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading__mask {  background-color: black;  width: 100%;  height: 100%;  position: absolute;  z-index: 12;  opacity: .3; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading__playbutton {  width: 127px;  height: 80px;  position: absolute;  top: 141px;  left: 257px;  z-index: 20; }@-webkit-keyframes fancy {  0% {    opacity: 0.85; }  95% {    opacity: 0.1; }  100% {    opacity: 0.85; } }@keyframes fancy {  0% {    opacity: 0.85; }  95% {    opacity: 0.1; }  100% {    opacity: 0.85; } }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading__svg-position {  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  -webkit-box-pack: center;  -webkit-justify-content: center;      -ms-flex-pack: center;          justify-content: center;  -webkit-box-align: center;  -webkit-align-items: center;      -ms-flex-align: center;          align-items: center;  height: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading__svg {  width: 127px;  height: 80px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia-loading__polygon {  opacity: 0.1;  fill: white;  -webkit-animation: fancy .96s infinite;          animation: fancy .96s infinite; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-a, #wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-b {  -webkit-animation-delay: .12s;          animation-delay: .12s; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-c, #wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-d {  -webkit-animation-delay: .24s;          animation-delay: .24s; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-e, #wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-f {  -webkit-animation-delay: .36s;          animation-delay: .36s; }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-g, #wistia-4d9ndj92b8 #wistia_chrome_1759 .wl-h {  -webkit-animation-delay: .48s;          animation-delay: .48s; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-status-bar {  background: rgba(0, 0, 0, 0.5);  position: absolute;  top: 0;  left: 0;  right: 0;  z-index: 10;  display: none;  opacity: 0;  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  font-size: 18px;  line-height: 34px;  text-align: center;  -webkit-transition: opacity 200ms ease;  transition: opacity 200ms ease; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-status-bar.w-is-visible {    display: block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-status-bar.w-is-transitioned {    opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-hover-detail {  position: absolute;  bottom: 34px;  background: rgba(0, 0, 0, 0.3);  display: none;  overflow: hidden;  width: 300px;  box-sizing: border-box;  padding: 14px;  right: 0px;  opacity: 0;  -webkit-transition: opacity 100ms ease;  transition: opacity 100ms ease;  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-hover-detail.w-is-visible {    display: block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-hover-detail.w-is-transitioned {    opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-hover-detail__p {  margin: 0;  margin-bottom: 10px;  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  line-height: 22px;  text-align: left; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-hover-detail__button {  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  font-size: 12px;  border-radius: 4px;  padding: 3px 6px;  border: 1px solid white; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-align--right {  text-align: right; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical {  background: none !important;  background-color: none;  width: 60px;  height: 60px;  position: absolute;  z-index: 10;  top: 0;  left: 0;  overflow: hidden; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical.is-expanded {    width: 100%; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical.is-closed {    width: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__trigger {  height: 60px;  width: 60px;  position: absolute;  top: 0;  left: 0;  background-color: rgba(0, 0, 0, 0.4); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__trigger.is-hidden {    opacity: 0;    -webkit-transition: opacity 100ms ease 300ms;    transition: opacity 100ms ease 300ms; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__trigger .w-control--spherical__icon {    position: absolute;    top: 0;    left: 0;    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAABYCAYAAABxlTA0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA6NJREFUeNrsm4txozAQhu1U4BJcgjs40gEdnK4Dl0AHvg5IB6QDfBXYHfg6IB04MLe+YTSrF2jXA/7/GSYOD0l8rFZaPTabheh+v+/649If9QYSg/sQIAvCBWQFuICsABeQFeACcma4w/kOkOXgDtcPgCwEd3QvIEvBBWQFuICsABeQFeACsgJcQOZhNDnhRkKuXgkwB2IWXI20lww5KwDJtJcIuZUAIJk2BEEQBEEQBEEQBEH66mP88hXifBq7LrUzNa8wUmVNDBhtuKsea3XMuhhtuA+1KwTcOt7VaMMdBrYPKwTsm34ygLsUyHPhki+r+uNmPX+bMhHZP1MMs8SP9AL37uleG9JQ/YunQ84EN7QMNXaBScF8pPtEMEmARCDncAuehiJp3QJZISvPh+0i89a35ExwSw4kuYsmwRJbj+VXjmcqptwnh6u6qPrknA0aFehEz5oAuIJ5/uT4SPtAvjdX2mTd9vWDCmTN3gJjZQXjc5OthACM1US8ZzXBcNIgO6xFCu7esqKOucd2I0eCXvj8JgPPOPL3foSZkI+xjUg2uKOFIF1o3RhVY64snLvYpdSM0X2zI9GoBYcacD1V3lWFy4QdRp21vSAW8CVHqB+C/Nbf44J43m63V4WAqWSqccqHHeA2E/L9ylF4YnR2XD4MgN/74+p48Zzrar+oIGcmvzqiP/pBZX2n32MVE2pbLtc3MOLGi69U1mDEJbJ4mRotNh+mmlcRvZCj43wp6IPrUHT6Rmb+5bFkIwG5z/O3dcrXtz1HnNs5zv/g2gPG2qZYrnFZLjH9B1gCMtUKQ92xlrue4B85+K4PcmVcnZ3XT+v/PxJwpwzQ1AmFsKOl5hGBUR61qzfBBAudFY0VTMtdevrQ/7tzjGvqEjfcBN3C1OmSJMjMi4QUCqV9ukV2CWft3cgCNzPkOvIlm4nDjc7+emTe0WCyws0MuQq85Cki+nNarq975gn/7ynbC+bA3cZA7v+0jn7jR+/Qf0WmUVoN09AQfPbP/42Jlpi+5hAInWPGPejZMYjP2CBqVoOmackLnZPL7xYA+QlwIyCbFQI2qnA9kM2KXYR5ygqmEeTVwrUgv+5uUQiCIAiCIAiCIAhaX6xfLDHtpcCtpUbkJNNeGtzsw56SaS8F7klqa5RnJsK8EmAzd+dPItxV7+dTgQy4gpABVxAy4ApCBlxByIArCBlwBSEDrjxkwFWGDLiCkAFXEDLgCkIGXEHIi4L7LcAAUR0jYiGZz/IAAAAASUVORK5CYII=");    background-size: 44px 44px;    background-repeat: no-repeat;    background-position: 8px 8px;    height: 100%;    width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control.w-control--spherical, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical.w-control--icon {  background: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control.w-control--spherical:hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical.w-control--icon:hover {    background: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__direction-box-mask {  left: 60px;  right: 0;  height: 60px;  position: absolute;  overflow: hidden; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__direction-box-mask.bp-500 {    display: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__direction-box-text {  opacity: 0;  -webkit-transition: opacity 200ms ease 0;  transition: opacity 200ms ease 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control--spherical__direction-box {  position: absolute;  top: 0;  left: 0;  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  -webkit-box-align: center;  -webkit-align-items: center;      -ms-flex-align: center;          align-items: center;  width: 100%;  height: 60px;  padding-left: 10px;  font-size: 16px;  background-color: rgba(0, 0, 0, 0.4);  box-sizing: border-box;  -webkit-transform: translateX(-100%);          transform: translateX(-100%);  -webkit-transition: -webkit-transform 200ms ease 100ms;  transition: -webkit-transform 200ms ease 100ms;  transition: transform 200ms ease 100ms;  transition: transform 200ms ease 100ms, -webkit-transform 200ms ease 100ms; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .is-open .w-control--spherical__direction-box {  -webkit-transform: translateX(0);          transform: translateX(0);  -webkit-transition: -webkit-transform 200ms ease 200ms;  transition: -webkit-transform 200ms ease 200ms;  transition: transform 200ms ease 200ms;  transition: transform 200ms ease 200ms, -webkit-transform 200ms ease 200ms; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .is-open .w-control--spherical__direction-box .w-control--spherical__direction-box-text {    -webkit-transition: opacity 200ms ease 300ms;    transition: opacity 200ms ease 300ms;    opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .is-open .w-control--spherical__icon {  -webkit-animation-name: logo;          animation-name: logo;  -webkit-animation-duration: 500ms;          animation-duration: 500ms; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_directional_arrows {  height: 30px;  vertical-align: middle;  display: inline-block;  margin: 0 5px 4px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .wistia_direction_box {  font-size: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-640 .wistia_direction_box {  font-size: 15px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-750 .wistia_direction_box {  font-size: 14px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .wistia_directional_arrows {  height: 20px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-640 .wistia_directional_arrows,#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .wistia_directional_arrows {  display: none; }@-webkit-keyframes logo {  0% {    -webkit-transform: scale(1);            transform: scale(1); }  33% {    -webkit-transform: scale(0.9);            transform: scale(0.9); }  50% {    -webkit-transform: scale(1.1);            transform: scale(1.1); }  100% {    -webkit-transform: scale(1);            transform: scale(1); } }@keyframes logo {  0% {    -webkit-transform: scale(1);            transform: scale(1); }  33% {    -webkit-transform: scale(0.9);            transform: scale(0.9); }  50% {    -webkit-transform: scale(1.1);            transform: scale(1.1); }  100% {    -webkit-transform: scale(1);            transform: scale(1); } }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu {  cursor: pointer;  display: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu.w-is-visible {    display: block; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu__item {  background: transparent;  padding: 6px 16px;  -webkit-transition: none;  transition: none;  color: #555;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  font-weight: normal;  font-size: 14px;  display: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu__item:hover {    background: #54bbff;    color: #fff; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu__item.w-is-visible {    display: block; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu__item.is-disabled {    background: transparent;    color: #bbb; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-context-menu__item--title {  background: transparent;  color: #bbb;  font-size: 11px;  line-height: 1em;  padding-bottom: 3px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .embed-code-copier {  position: absolute;  bottom: -1000px;  right: 0;  background: rgba(0, 0, 0, 0.3);  width: 300px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .embed-code-copier.w-is-visible {    bottom: 34px;    height: auto; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .embed-code-copier__textarea {  background: none;  border: none;  width: 100%;  border: none;  padding: 11px 14px;  box-sizing: border-box;  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  font-size: 13px;  line-height: 22px;  word-break: break-all; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .embed-code-copier__textarea:focus {    outline: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .embed-code-copier__textarea::-moz-selection {    background: #bbb; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .embed-code-copier__textarea::selection {    background: #bbb; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-protected {  height: 100%;  position: relative;  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-protected-overlay {  background-color: transparent;  height: 100%;  left: 0;  position: absolute;  top: 0;  width: 100%;  z-index: 1;  color: white;  font-family: WistiaPlayerOverpass, Helvetica, Arial; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-protected-overlay.is-visible {    background-color: rgba(0, 0, 0, 0.6); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-lock--icon {  left: 0;  position: absolute;  text-align: left;  top: 0;  width: 30px;  padding: 11px;  background: rgba(0, 0, 0, 0.4); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-lock--icon path {    fill: white; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-lock--icon.bp-325 {    width: 18px;    height: 22px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-lock--icon.bp-450 {    width: 24px;    height: 29px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-lock--icon.bp-640 {    width: 30px;    height: 36px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-protected-form {  height: 100%;  position: absolute;  text-align: center;  top: 0;  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-container {  position: relative;  top: 50%;  -webkit-transform: translateY(-50%);          transform: translateY(-50%); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-container.bp-325 {    margin: 0px 20px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-container.bp-450 {    margin: 0px 40px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-container.bp-640 {    margin: 0px 40px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-text {  font-weight: 300;  margin-top: 0px;  overflow: hidden; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-text.bp-325 {    font-size: 14px;    line-height: 22px;    margin-bottom: 16px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-text.bp-450 {    font-size: 20px;    line-height: 28px;    margin-bottom: 24px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-challenge-text.bp-640 {    font-size: 28px;    line-height: 36px;    margin-bottom: 24px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-container {  display: inline-block;  position: relative;  white-space: nowrap; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-input {  border: 0;  border-radius: 0;  box-sizing: border-box;  background-color: white;  color: #505050;  display: inline-block;  line-height: 30px;  outline: none;  padding: 0 22px 0 8px;  vertical-align: top;  width: 70%; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-input.bp-325 {    font-size: 12px;    height: 30px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-input.bp-450 {    font-size: 14px;    height: 30px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-input.bp-640 {    font-size: 16px;    height: 40px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-input.w-password-input--error {    border: 2px solid #DE686C; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-error-x {  position: absolute;  right: 65px;  color: red;  font-size: 15px;  top: 7px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-error-x.bp-640 {    top: 13px;    right: 80px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .wistia_password_error_icon polygon {  fill: #DE686C; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-submit {  border: 0;  border-radius: 0;  cursor: pointer;  display: inline-block;  letter-spacing: 2px;  font-weight: 600;  line-height: 30px;  color: #fff;  outline: none;  zoom: 1;  text-transform: uppercase;  vertical-align: top; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-submit.bp-325 {    font-size: 12px;    height: 30px;    width: 46px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-submit.bp-450 {    font-size: 14px;    height: 30px;    width: 46px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-password-submit.bp-640 {    font-size: 16px;    height: 40px;    width: 62px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-error-text {  color: #DE686C;  line-height: 1em;  margin-top: 8px;  text-align: left; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-error-text.bp-325 {    font-size: 10px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-error-text.bp-450 {    font-size: 12px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-error-text.bp-640 {    font-size: 14px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu--chapters {  top: 0;  bottom: 0;  padding-top: 8px;  width: auto;  display: none;  right: 0;  box-sizing: border-box;  position: static; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu--chapters.w-is-visible {    display: block;    height: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu__list--chapters {  min-width: 120px;  max-width: 240px;  display: inline-block; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapters__chapter {  padding: 0 15px 0 0;  list-style-type: none;  display: -webkit-box;  display: -webkit-flex;  display: -ms-flexbox;  display: flex;  -webkit-box-orient: horizontal;  -webkit-box-direction: normal;  -webkit-flex-direction: row;      -ms-flex-direction: row;          flex-direction: row; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapters__chapter-number {  padding-top: 1px;  min-width: 24px;  text-align: right; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapters__chapter-item {  height: auto;  line-height: 22px;  padding-top: 6px;  padding-bottom: 6px;  word-wrap: break-word; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapters__scrollcontainer {  overflow-y: auto;  height: 100%;  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapters__menu-header {  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  font-size: 30px;  font-weight: bold;  line-height: 40px;  padding: 12px;  color: white;  background: rgba(0, 0, 0, 0.4);  margin-bottom: 8px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-indicators {  position: absolute;  left: 0;  right: 0;  bottom: 0;  top: 0; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-indicators__indicator {  position: absolute;  z-index: 10;  line-height: 34px;  font-size: 20px;  background: rgba(255, 255, 255, 0);  text-align: center;  width: 16px;  margin-left: -8px;  height: 100%; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-indicators__indicator.is-hovering .w-playbar-indicators__indicator-dot {    -webkit-transform: scale(1.2);            transform: scale(1.2);    opacity: 1; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-indicators__indicator.is-hidden .w-playbar-indicators__indicator-dot {    opacity: .2; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-indicators__indicator.is-passed .w-playbar-indicators__indicator-dot {    opacity: .6; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar.w-is-visible .w-playbar-indicators__indicator {  -webkit-transition: 150ms ease background;  transition: 150ms ease background; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar.w-is-visible .w-playbar-indicators__indicator.is-dragging .w-playbar-indicators__indicator-dot {    -webkit-transition: none;    transition: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar.w-is-not-transitioning .w-playbar-indicators__indicator-dot {  -webkit-transition: 150ms ease opacity, 100ms ease transform;  transition: 150ms ease opacity, 100ms ease transform; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-playbar-indicators__indicator-dot {  opacity: .9;  pointer-events: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapter-title {  position: absolute;  bottom: 0px;  left: 0;  background: rgba(0, 0, 0, 0.5);  padding: 0 14px;  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  line-height: 22px;  opacity: 0;  white-space: nowrap;  max-width: 240px;  overflow: hidden;  text-overflow: ellipsis; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-chapter-title.w-is-visible {    opacity: 1; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-control-bar.w-is-not-transitioning .w-chapter-title {  -webkit-transition: 100ms ease opacity;  transition: 100ms ease opacity; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .w-playbar-indicators__indicator {  line-height: 14px;  font-size: 15px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .bp-500 .w-chapter-title {  bottom: 15px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu-bar {  position: absolute;  right: 0;  top: 0;  bottom: 34px;  opacity: 0;  -webkit-transition: opacity 200ms ease;  transition: opacity 200ms ease;  z-index: 1; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-menu-bar.w-is-visible {    opacity: 1;    pointer-events: auto; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem {  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  background: rgba(0, 0, 0, 0.7);  box-sizing: border-box;  color: #fff;  display: none;  -webkit-box-orient: vertical;  -webkit-box-direction: normal;  -webkit-flex-direction: column;      -ms-flex-direction: column;          flex-direction: column;  height: 100%;  -webkit-box-pack: center;  -webkit-justify-content: center;      -ms-flex-pack: center;          justify-content: center;  line-height: 22px;  min-width: 320px;  opacity: 0;  overflow-x: hidden;  overflow-y: auto;  padding: 0 20px;  position: absolute;  top: 0;  -webkit-transition: opacity 200ms ease-in-out;  transition: opacity 200ms ease-in-out;  width: 100%;  z-index: 12; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem.w-is-visible {    opacity: 1;    display: -webkit-box;    display: -webkit-flex;    display: -ms-flexbox;    display: flex; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem.w-is-transparent {    opacity: 0;    display: -webkit-box;    display: -webkit-flex;    display: -ms-flexbox;    display: flex; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem.w-is-hidden {    opacity: 0;    display: none; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem * {    box-sizing: border-box; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__centered-content {  margin: 0 auto;  padding: 8px;  position: relative;  width: 350px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__form-content--disabled {  color: #777; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__form-content--disabled .w-report-a-problem__category, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__form-content--disabled .w-report-a-problem__description {    background: #999;    color: #777; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__category {  outline: 2px solid transparent;  width: 200px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__category--error {  outline: 2px solid #e37091; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__description {  height: 60px;  border: 0;  outline: 2px solid transparent;  padding: 6px;  outline: none;  width: 100%; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__description--error {  outline: 2px solid #e37091; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__button-row {  margin-top: 16px;  position: relative;  text-align: right; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__form-feedback {  color: #e2e46f;  left: 0;  line-height: 1.3em;  overflow: hidden;  position: absolute;  text-align: left;  text-overflow: ellipsis;  top: 8px;  width: 206px; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__form-feedback--error {  color: #e37091; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss {  -moz-border-radius: 5px;  -webkit-border-radius: 5px;  -webkit-font-smoothing: subpixel-antialiased;  background-color: #f7f6f4;  border-radius: 5px;  border: 1px solid #bbb;  color: #888;  cursor: pointer;  display: inline-block;  font-family: WistiaPlayerOverpass, Helvetica, Arial, Sans-Serif;  font-size: 14px;  font-weight: 400;  line-height: normal;  margin: 5px;  overflow: hidden;  padding: 8px 15px;  text-align: center;  text-decoration: none;  vertical-align: middle;  background-color: #54bbff;  border-color: #54bbff;  color: white;  margin: 0; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send:hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss:hover {    background-color: #f1efee;    border-color: #aaa;    color: #777; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send:focus, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss:focus {    border: double;    padding: 6px 13px;    outline: 0; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send:active, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss:active {    background-color: #e7e6e4;    border: 1px solid #999;    color: #666;    padding: 8px 15px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send:hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send.hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss:hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss.hover {    background-color: #4caff4;    border-color: #4caff4;    color: white; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send:active, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send.active, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss:active, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss.active {    background-color: #41a4e8;    border-color: #41a4e8;    color: white; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__send:focus, #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__dismiss:focus {    border-color: white; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__cancel {  display: inline-block;  margin: 0 12px; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-report-a-problem__cancel:hover {    text-decoration: underline; }#wistia_chrome_1759 {  z-index: 0; }  #wistia_chrome_1759:-webkit-full-screen {    background: #000; }  #wistia_chrome_1759:-moz-full-screen {    background: #000; }  #wistia_chrome_1759:-ms-fullscreen {    background: #000; }  #wistia_chrome_1759:fullscreen {    background: #000; }#wistia-4d9ndj92b8 #wistia_chrome_1759 * {  max-width: none; }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-tooltip {  color: white;  font-size: 14px;  font-family: WistiaPlayerOverpass, sans-serif;  -webkit-font-smoothing: antialiased;  line-height: 26px;  letter-spacing: 0;  word-wrap: normal;  text-decoration: none;  text-transform: none;  -webkit-transition: opacity 200ms, -webkit-transform 150ms;  transition: opacity 200ms, -webkit-transform 150ms;  transition: opacity 200ms, transform 150ms;  transition: opacity 200ms, transform 150ms, -webkit-transform 150ms;  background: rgba(0, 0, 0, 0.5);  -webkit-transform: translateZ(0);          transform: translateZ(0);  opacity: 0; }  #wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 .w-tooltip.w-is-visible {    opacity: 1;    -webkit-transform: translateZ(0) translateY(0);            transform: translateZ(0) translateY(0); }#wistia-4d9ndj92b8 #wistia_chrome_1759 #wistia_video_wrapper_1772 #wistia_1769 {  -o-object-fit: contain;     object-fit: contain; }</style><style id="wistia_1774_style" type="text/css" class="wistia_injected_style">#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_vulcan_control,#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control {  background-color: rgba(84,187,255,0.95); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_vulcan_control:hover, #wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_vulcan_control.is-active,  #wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control:hover,  #wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control.is-active {    background-color: rgba(84,187,255,0.7); }#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control--playbar,#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_playbar {  background-color: rgba(255,255,255,0); }  #wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control--playbar:hover,  #wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_playbar:hover {    background-color: rgba(255,255,255,0); }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_playbar_completed,#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control--playbar__completed {  background-color: rgba(54,157,225,0.7); }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_playbar_buffered,#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control--playbar__buffered {  background-color: rgba(159,255,255,0.6); }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_playbar_background,#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control--playbar__background {  background-color: rgba(124,227,255,0.3); }#wistia-4d9ndj92b8 #wistia_chrome_1759 .wistia_playbar_placeholder:hover,#wistia-4d9ndj92b8 #wistia_chrome_1759 .w-control--playbar__placeholder:hover {  background-color: rgba(84,187,255,0.95); }</style></body></html>

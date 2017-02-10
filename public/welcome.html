@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+			<meta charset="utf-8">
+
+			<meta viewport="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+      <script>
+    
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+
+    </script>
+      <link rel="stylesheet" href= "/css/welcome.css"> 
+    </head>
+    <body> 
+      <main id="background">
+        <nav class="navbar navbar-inverse">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <a class="navbar-brand" href="#">Phillip Palatas</a>
+         </div>
+         <ul class="nav navbar-nav">
+           <li class="active"><a href="#home">Home</a></li>
+           <li><a href="#portfolio">Portfolio</a></li>
+           <li><a href="#resume">Resume</a></li>
+
+         </ul>
+         <form class="navbar-form navbar-left">
+           <div class="form-group">
+             <input type="text" class="form-control" placeholder="Search">
+           </div>
+           <button type="submit" class="btn btn-default">Submit</button>
+         </form>
+       </div>
+      </nav>
+      <h1>WELCOME</h1>
+      <section id="section">
+        
+        <a id="portfolio"></a>
+        <h2>Portfolio</h2>
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+
+        <div class="sectionbox">Insert Examples Here</div>
+      </section>
+      <section id="section">
+
+      <a id="resume"></a>
+      <h2>Resume</h2>
+        <div class="sectionbox">Resume Information</div>
+
+        <div class="sectionbox">Resume Information</div>
+
+        <div class="sectionbox">Resume Information</div>
+
+        <div class="sectionbox">Resume Information</div>
+
+        <div class="sectionbox">Resume Information</div>
+
+        <div class="sectionbox">Resume Information</div>
+      </section>
+
+      <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>Phillip<span>Palatas</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          ·
+          <a href="#">Blog</a>
+          ·
+          <a href="#">Pricing</a>
+          ·
+          <a href="#">About</a>
+          ·
+          <a href="#">Faq</a>
+          ·
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Phillip Palatas</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Address</span> San Antonio, Texas</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>808-436-2462</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">ppalatas@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>About Phillip</span>
+          Web Developer
+        </p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+      </div>
+    </footer>
+    </main>
+  </body>
+</html>  
+
+  
+        
+

@@ -1,0 +1,86 @@
+
+		#container {
+
+			margin: 0 auto;
+			width: 400px;
+
+		}
+		
+		.helloworld {
+
+			padding:20px;
+			background-color: #black;
+
+		}
+
+		h1, h2, h3 {
+				
+			 text-decoration: underline;
+			 color: white;
+			 text-align: center;
+
+			}
+		
+		body {
+
+			background-color: #808080;
+			background-image: url("/img/codeup-arrow.png");
+			background-position: scroll;
+			font-family: 'Source Sans Pro', sans-serif;
+
+
+		}
+		
+		ul {
+
+			list-style: square;
+		}
+
+		ol {
+
+			list-style: circle;
+		}
+
+		td, tr {
+
+			align-content: center;
+			border: 1px solid black;
+
+		}
+
+		p {
+				
+			text-align: center;
+		}
+
+		a:link { 
+
+			color:blue;
+		 }
+		
+		a: visited {
+
+			color: black;
+		}
+
+		a: hover {
+
+			text-decoration: underline;
+		}
+		a: active {
+
+			color: green;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+

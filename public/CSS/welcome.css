@@ -1,0 +1,77 @@
+body { 
+	margin: 0 auto;
+	height: 1200px;
+	padding-right: 0;
+	background-image: url("../img/chalkboard.jpeg");
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+
+ @font-face { 
+  	font-family: 'CoalhandLuke'; src: url('CoalhandLukeTrial.otf'); 
+  } 
+
+#chalk { 
+
+	font-family: 'CoalhandLukeTrial';
+	font-size: 1em;
+	opacity:.91;
+
+
+ }
+ #section {
+ 	margin-top: 400px;
+	background: transparent;
+	border: 1px solid white;
+	height: 600px;
+	text-align: center;
+	position: relative;
+
+ }
+
+ .sectionbox {
+
+	height:150px;
+	width:150px;
+	background-color: white;
+	float: left;
+	position: relative;
+	font-family: 'CoalhandLukeTrial';
+	opacity: .91;
+	margin-left: 50px;
+	margin-top: 50px;
+
+}
+
+ .resumebox {
+
+	height:400px;
+	width:400px;
+	background-color: white;
+	float: left;
+	position: relative;
+	font-family: 'CoalhandLukeTrial';
+	opacity: .91;
+	margin-left: 150px;
+	margin-top: 150px;
+
+}
+h2 {
+	font-family: 'CoalhandLukeTrial';
+	font-size: 5em;
+	opacity: .91;
+	color: white;
+
+}
+
+h1 {
+	margin-top: 200px;
+ 	font-family: 'CoalhandLukeTrial';
+	text-align: center;
+	color: white;
+	font-size: 12em;
+	opacity:.91;
+ }

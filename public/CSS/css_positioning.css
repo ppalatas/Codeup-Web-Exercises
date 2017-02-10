@@ -1,0 +1,79 @@
+.box {
+
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 50px;
+	color: white;
+	font-weight: bold;
+
+}
+
+h1 {
+
+	text-decoration: underline;
+	color: blue;
+	margin-bottom: 50px;
+
+
+}
+.box > img {
+
+	position: absolute;
+	top: -40px;
+	right: -40px;
+}
+#box-red {
+	
+	margin-top: 0px;
+	background-color: red;
+	float: left;
+	position: relative;
+
+}
+
+#box-orange {
+
+	margin-top: 0px;
+	margin-left: 50px;
+	background-color: orange;
+	float: left;
+	position: relative;
+}
+
+#box-yellow {
+
+	margin-top: 0px;
+	margin-left: 50px;
+	background-color: yellow;
+	float: left;
+	position: relative;
+}
+#box-green {
+	margin-top: 50px;
+	background-color: green;
+	float: left;
+	clear: left;
+	position: relative;
+}
+
+#box-blue {
+
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color: blue;
+	float: left;
+	position: relative;
+
+}
+
+#box-indigo {
+
+	margin-top: 50px;
+	margin-left: 50px;
+	background-color: indigo;
+	float: left;
+	position: relative;
+
+}

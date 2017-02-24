@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Calculator Project</title>
+			<meta charset= "utf-8">
+			<link rel="stylesheet" href="css/calculator.css">
+	</head>
+	<body>
+	<div Id="background">
+		<h1><center>Calculator project</center></h1>
+
+		<div id="maincontainer">
+			<div class="calcScreen" type="text">
+				<input type="text" name="equalsInput" id="equalsInput">
+				<input type="text" name="leftInput" id="leftInput">
+				<input type="text" name="middleInput" id="middleInput">
+				<input type="text" name="rightInput" id="rightInput">
+			</div>
+
+			<button type="submit" value="" id="clear" class="buttonleft" name="">C</button>
+			<button type="submit" value="-" id="buttonMain" class="buttonright negative" name="-">+/-</button>
+			<button type="submit" value="%" id="buttonMain" class="buttonmain math" name="%">%</button>
+			<button type="submit" value="/" id="buttonMain" class="buttonright math" name="/">/</button>
+			<button type="submit" value="7" id="buttonLeft" class="buttonleft number" name="7">7</button>
+			<button type="submit" value="8" id="buttonLeft" class="buttonmain number" name="8">8</button>
+			<button type="submit" value="9" id="buttonLeft" class="buttonmain number" name="9">9</button>
+			<button type="submit" value="*" id="buttonMain" class="buttonmain math" name="*">*</button>
+			<button type="submit" value="4" id="buttonLeft" class="buttonleft number" name="4" >4</button>
+			<button type="submit" value="5" id="buttonLeft" class="buttonmain number" name="5">5</button>
+			<button type="submit" value="6" id="buttonLeft" class="buttonmain number" name="6">6</button>
+			<button type="submit" value="-" id="buttonMain" class="buttonright math" name="-">-</button>
+			<button type="submit" value="1" id="buttonLeft" class="buttonleft number" name="1">1</button>
+			<button type="submit" value="2" id="buttonLeft" class="buttonmain number" name="2">2</button>
+			<button type="submit" value="3" id="buttonLeft" class="buttonmain number" name="3">3</button>
+			<button type="submit" value="+" id="buttonMain" class="buttonmain math" name="+">+</button>
+			<button type="submit" value="0" id="buttonLeft" class="zerobutton number" name="0">0</button>
+			<button type="submit" value="." id="buttonMain" class="bottombuttons math" name=".">.</button>
+			<button type="submit" value="=" id="buttonRight" class="buttonright equals" name="=">=</button>
+
+		</div>
+		<script type="text/javascript">
+			var numberButtons = document.getElementsByClassName('number');
+       		var mathButtons = document.getElementsByClassName('math');
+  			var leftInput = document.getElementById('leftInput');
+       		var middleInput = document.getElementById('middleInput');
+       		var rightInput = document.getElementById('rightInput');
+       		var equalsInput = document.getElementById('equalsInput');
+       		var equalsButton = document.getElementsByClassName('equals')[0];
+       		var clearButton = document.getElementById('clear');
+       		var negativeButton = document.getElementsByClassName('negative')[0];
+			// For Input left 
+   			function listener()
+   			{
+   				console.log(this);
+   				console.log(event.target.innerText);
+
+	       		if (middleInput.value == ""){
+
+	        	leftInput.value += this.innerText;
+	        	} else if(middleInput.value !== "" && leftInput.value !== "")
+   					rightInput.value += this.innerText;
+   				}
+
+			for (var i = 0; i < numberButtons.length; i++){
+   				var number = numberButtons[i];
+   				number.addEventListener('click', listener)
+   			}
+			// For Input  Middle 
+			function middle() 
+			{
+	        	console.log(this);
+	        	console.log(event.target.innerText);
+	        	middleInput.value = this.innerText;
+	  		}
+
+
+   			for (var i = 0; i < mathButtons.length; i++){
+   				var math = mathButtons[i];
+   				math.addEventListener('click' , middle)
+   			}
+   			// For Clear Button 
+			function clearing (){
+   				leftInput.value = "";
+   				middleInput.value = ""; 
+   				rightInput.value = ""; 
+   				equalsInput.value = "";
+			}
+
+			clearButton.addEventListener('click' , clearing);
+
+			// For equals Button / Input 
+   			function equals()
+   			{
+   				console.log(this);
+   				console.log(event.target.innerText);
+   				var leftValue =	parseFloat(leftInput.value);
+   				var rightValue = parseFloat(rightInput.value);		
+
+   				if (middleInput.value == "+"){
+   					equalsInput.value = leftValue + rightValue; 
+   				} else if (middleInput.value == "-") {
+   					equalsInput.value = leftValue - rightValue; 
+   				} else if (middleInput.value == "/") {
+   					equalsInput.value = leftValue / rightValue; 
+   				} else if (middleInput.value == "*") {
+   					equalsInput.value = leftValue * rightValue; 
+   				}
+   			}
+   			
+   				equalsButton.addEventListener('click' , equals);
+
+   			function negatives()
+   			{
+   				console.log(this);
+   				console.log(event.target.innerText);
+
+   				// Add the negative sign in front of the integer
+   				// if negative button is clicked (true)
+   				if (negativeButton)
+   				{
+   					leftInput.value = leftInput.value *-1;
+
+   				} else if {
+
+   					 rightInput.value = rightInput.value *-1;
+   				}
+   			}
+   				negativeButton.addEventListener('click' , negatives);
+   				console.log(10 % 3);
+		</script>
+	</div>
+	</body>
+</html>

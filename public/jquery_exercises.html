@@ -33,9 +33,8 @@
 			"use strict";
 			
 				$('li').css ("font-size" , "20px");
-				$('h1').css("background-color" , "yellow");
-				$('p').css("background-color" , "yellow");
-				$('li').css("background-color" , "yellow");
+				$('h1 , p , li').css("background-color" , "yellow");
+
 
 				alert($('h1').html());
 
@@ -65,6 +64,22 @@
 
 			// alert($("#mainHeader").html());
 			// alert($("#lists").html());
+		
+			//*************Using the Multiple Selector
+
+//We can use the multiple selector by separating our selectors by commas:
+
+//$("selector1, selector2, ...")
+// If we wanted to get all the elements with a class of important and all paragraph elements, we could use this selector:
+
+// var selected = $('.important, p');
+
+
+
+
+
+
+
 		});
 		</script>
 	</body>

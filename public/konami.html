@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <title>Konami Code</title>
+	</head>
+	<body>
+
+		<script src="http://code.jquery.com/jquery-2.2.4.min.js"
+  		integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  		crossorigin="anonymous"></script>
+
+	    <h1>Konami Code</h1>
+
+	    <script>
+
+	    	$(document).ready(function(){
+	    		var konami = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65];
+	    		var cheat = [];
+
+		    	$("body").keydown(function(key){
+		    		console.log(key.keyCode);
+		    		cheat.push(key.keyCode); 
+		    		console.log(cheat);
+
+		    		var cheatCode = cheat.join();
+		    		var konamiCode = konami.join();
+
+
+
+		    	if (cheatCode == konamiCode){
+		    		activateEffects();
+		    	}
+
+
+
+		    	});
+
+
+	    	});
+	    	function activateEffects(){
+	    			$("body")
+
+	    	}
+ 
+
+	    </script>
+	</body>
+</html>
+

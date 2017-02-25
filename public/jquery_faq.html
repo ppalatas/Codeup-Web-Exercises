@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery FAQ's</title>
+        <style type="text/css">
+            .invisible{
+                background-color: yellow;
+                display: none;
+            }
+
+            .beast{
+                display: inline-block;
+
+            }
+            
+            .headerFirst{
+
+                color: black;
+            }
+
+            .header {
+                color: blue;
+            }
+        </style>
+
+    </head>
+    <body>
+        <h1 ><em>Frequently Asked Questions to the National Park Service</em></h1>
+            <dl>
+                <dt>Which State has the most National Parks?</dt>
+                <dd class="invisible">California</dd>
+                <dt>How many mountains are in the Acadia National Park?</dt>
+                <dd class="invisible">24</dd>
+                <dt>What are the most unique animals in the National Park?</dt>
+                <dd class="invisible">Wolves</dd>
+                <dt>How many National Parks are there in the US?</dt>
+                <dd class="invisible">58</dd>
+                <dt>What is the smallest National Park?</dt>
+                <dd class="invisible">Beachwood, Ohio</dd>
+                <dt>What state does not have a national park?</dt>
+                <dd class="invisible">Delaware</dd>
+                <dt>What is the largest national park in the United States?</dt>
+                <dd class="invisible">The great smokey mountains</dd>
+                <dt>What state is Acadia National Park in?</dt>
+                <dd class="invisible">Maine</dd>
+                <dt>What is the world's first national park?</dt>
+                <dd class="invisible">Yellow Stone</dd>
+                <dt>How many parks are in the United States?</dt>
+                <dd class="invisible">There are 6,624 state park units in the United States.</dd>
+            </dl>
+
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+
+        <script>
+            $("dt").click (function(){
+                $("dd").addClass("beast");
+            });
+
+            $("h1").click (function(){
+                $("h1").toggleClass("header");
+
+            });
+                // first () assigns what is going to be clicked 
+                //.click says that if you click on it it is going to do something 
+                // function creates an action to be put into play
+                //second lines' first () declares what item/element/tag that we are going to add the new class to. 
+                //.addClass shows that we want to add a class. Second () tells us the next css class that we are going to
+                //...... switch the 1 () to. 
+
+                //***If the class name is present, .toggleClass() will remove it ---- Above, we learned how to add a class to elements using .addClass(); here, we will learn how to remove classes from elements using .removeClass().
+
+
+
+
+        </script>
+            
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+
+
+
+
+
+
+
+
+
+

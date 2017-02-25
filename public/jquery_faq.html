@@ -93,14 +93,18 @@
 
             $(".nationalPark").click(function(){
                 $(".nationalPark").fadeOut(1000);
+                $(".nationalPark").fadeIn(1000);
+                $(".nationalPark").slideUp(1000);
             });
 
             $(".nationalPark1").click(function(){
                 $(".nationalPark1").fadeOut(1000);
             });
-            
+
             $(".nationalPark2").click(function(){
                 $(".nationalPark2").fadeOut(1000);
+                $(".nationalPark2").fadeIn(1000);
+                $(".nationalPark2").slideDown(1000);
             });
 
             $("ul").each(function(){
@@ -108,7 +112,7 @@
             });
 
             $("ul").click(function(){
-                $(this).children().fadeToggle(2000);
+                $(this).children().slideToggle(2000);
             });
 
                 // first () assigns what is going to be clicked 

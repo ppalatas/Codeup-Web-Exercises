@@ -49,6 +49,33 @@
                 <dd class="invisible">There are 6,624 state park units in the United States.</dd>
             </dl>
 
+            <h3 class="nationalPark">Arches</h3>
+            <ul>
+                <li>this park is cool</li>
+                <li>Badlands</li>
+                <li>Carlsbad Caverns</li>
+                <li>Denali</li>
+                <li>Everglades</li>
+            </ul>
+
+            <h3 class="nationalPark1">State Parks of Texas</h3>
+                <ul>
+                    <li>Abilene</li>
+                    <li>Big Bend</li>
+                    <li>Choke Canyon</li>
+                    <li>Davis Mountains</li>
+                    <li>Enchanted Rock</li>
+                </ul>
+            <h3 class="nationalPark2">State Parks of Texas</h3>
+                <ul>
+                    <li>Gladstone</li>
+                    <li>Happy Rock</li>
+                    <li>Swope</li>
+                    <li>Mason Park</li>
+                    <li>random</li>
+                </ul>
+
+
         <script src="http://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
@@ -61,8 +88,16 @@
 
             $("h1").click (function(){
                 $("h1").toggleClass("header");
-
             });
+
+            $("ul").each(function(){
+                $(this).children().first().css("font-weight" , "bold");
+            });
+
+            $("ul").click (function(){
+                $(this).addClass("invisible");
+            });
+
                 // first () assigns what is going to be clicked 
                 //.click says that if you click on it it is going to do something 
                 // function creates an action to be put into play
@@ -71,13 +106,7 @@
                 //...... switch the 1 () to. 
 
                 //***If the class name is present, .toggleClass() will remove it ---- Above, we learned how to add a class to elements using .addClass(); here, we will learn how to remove classes from elements using .removeClass().
-
-
-
-
         </script>
-            
-
     </body>
 </html>
 

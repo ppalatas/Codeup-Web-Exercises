@@ -83,19 +83,32 @@
 
         <script>
             $("dt").click (function(){
-                $("dd").addClass("beast");
+                $("dd").fadeToggle(2000);
+                $("dd").slideUp(2000);
             });
 
             $("h1").click (function(){
                 $("h1").toggleClass("header");
             });
 
+            $(".nationalPark").click(function(){
+                $(".nationalPark").fadeOut(1000);
+            });
+
+            $(".nationalPark1").click(function(){
+                $(".nationalPark1").fadeOut(1000);
+            });
+            
+            $(".nationalPark2").click(function(){
+                $(".nationalPark2").fadeOut(1000);
+            });
+
             $("ul").each(function(){
                 $(this).children().first().css("font-weight" , "bold");
             });
 
-            $("ul").click (function(){
-                $(this).addClass("invisible");
+            $("ul").click(function(){
+                $(this).children().fadeToggle(2000);
             });
 
                 // first () assigns what is going to be clicked 

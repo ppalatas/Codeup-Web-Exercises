@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Weather Map API</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <style>
+        .container
+
+        {
+           outline-style: 2px solid black;
+           margin: 0 auto;
+           width: 1200px;
+           padding: 15px; 
+           background-color: #9ECFE4;
+
+
+        }
+        .box
+
+        {
+            height: 250px;
+            height: 250px;
+            width: 250px;
+            background-color: #D9D9D9;
+            display:inline-block;
+            outline: 2px solid white;
+            text-align: center;
+            margin-left: 10%;
+            color: black;
+            opacity:.7;
+        }
+
+
+    </style>
+    </head>
+    <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <main class="container">
+            <h1><center>Weather Map API</center></h1>
+            </main>
+            <script>
+
+            $(document).ready(function()
+            {
+
+                var APPID = "7f8e3aa0aad113510e0c1eaafd1c17b8";
+                var url = "http://api.openweathermap.org/data/2.5/forecast/daily";
+
+                //Justin's API key: 7f8e3aa0aad113510e0c1eaafd1c17b8
+
+
+                function getWeather()
+                {
+                    $.get(url, {
+                        APPID: APPID, 
+                        // q: "San Antonio",
+                        lat: 29.423017,
+                        lon: -98.48527,
+                        cnt: 3,                 // controls how many days you get back from the forecast 
+                        units: "imperial"
+                    
+                    })
+
+                    .fail(function(data, status)
+                    {
+                        alert("Failed to load:" + status);
+                    })
+                    
+                    .done(function(data)
+                    {
+                        var temperature = data.list[0].temp.day;
+
+                        for (var i = 0; i < data.list.length; i++){
+
+                            var weather = ""; 
+                            weather += "<div class='box'>  <center> <h3>" + "<strong>" + data.city.name + "</strong>" + "</h3>";
+                            weather += "<img src='http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" + "<br>";
+                            weather += "<strong>" + "Temperature: " + "<h4>" + data.list[i].temp.day + "°F" + "</h4>" + "</strong>" + "<br>";
+                            weather += "<strong>" + "Humidity: " + "<br>" + data.list[i].humidity + "</strong>" + "</div>";
+                         
+                        console.log(data);
+                       
+                        $(".container").append(weather);
+
+                    } 
+
+          
+
+                    // google maps API Key : "AIzaSyCT94FBNBA31r5O31nTGbvuau4wu-LPBZo"
+
+                    // add input fields with a button that has a .click function and pass lat: lon: to the get weather function 
+
+                    });
+                }
+                getWeather();
+            });
+        </script>
+    </body>
+</html>

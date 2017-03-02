@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title> Weather Map API</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <style>
+        #container
+
+        {
+           outline-style: 2px solid black;
+           margin: 0 auto;
+           width: 1000px;
+           background-color: #9ECFE4;
+        }
+
+        h1 
+        {
+            color: white;
+        }
+
+        .box
+
+        {
+            height: 250px;
+            width: 250px;
+            background-color: #D9D9D9;
+            display:inline-block;
+            outline: 2px solid white;
+            text-align: center;
+            margin-left: 10%;
+            color: black;
+            opacity:.7;
+        }
+
+        .container2
+        {
+            background-color: #0B4F6C;
+            
+        }
+
+
+    </style>
+    </head>
+    <body class="container2">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <main class="container">
+            <h1><center>Weather Map API</center></h1>
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            </main>
+            <script>
+
+            $(document).ready(function()
+            {
+
+                var APPID = "7f8e3aa0aad113510e0c1eaafd1c17b8";
+                var url = "http://api.openweathermap.org/data/2.5/forecast/daily";
+
+
+
+                function getWeather()
+                {
+                    $.get(url, {
+                        APPID: APPID, 
+                        q: "San Antonio",
+                        lat: 29.423017,
+                        lon: -98.48527,
+                        cnt: 1,                 // controls how many days you get back from the forecast 
+                        units: "imperial"
+                    
+                    })
+
+                    .fail(function(data, status)
+                    {
+                        alert("Failed to load:" + status);
+                    })
+                    
+                    .done(function(data)
+                    {
+                        var city = data.city.name;
+        
+                        var country = data.city.country;
+
+
+        
+                        // var lat = data.coord.lat;
+        
+                        // var lon = data.coord.lon;
+            
+                        var temperature = data.list[0].temp.day;
+
+                        var humidity = data.list[0].humidity;
+
+                        
+
+
+                        // * for (var i = 0; i < data.length; i++){
+
+                            $(".box1").append("<h3>" + "Day 1" + "</h3>");
+                            $(".box1").append("<em>" + city + "</em>" + "<h5>" + "Temperature: " + "</h5>" + temperature + "°" + " F")
+                            $(".box1").append("<br><h5>" + "Country: " + "</h5>" + country);
+
+                            $(".box2").append("<h3>" + "Day 2" + "</h3>");
+                            $(".box2").append(city);
+                            $(".box2").append(city);
+                            $(".box2").append(city);
+                            
+                            $(".box3").append("<h3>" + "Day 3" + "</h3>");
+                            $(".box3").append(city);
+                            $(".box3").append(city);
+                            $(".box3").append(city);
+                        // } *
+
+                        console.log(data);
+                    });
+                }
+                getWeather();
+            });
+        </script>
+    </body>
+</html>

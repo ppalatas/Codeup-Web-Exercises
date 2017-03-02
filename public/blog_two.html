@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Online Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"><!-- 
+ -->  
+    </head>
+    <body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <main class="container">
+          <h1> Welcome to my bloggy blog</h1>
+         <button id="button">Refresh</button>
+          <div id="posts"></div>
+          <script>
+            var url ="/data/blog.json"; 
+
+            var request = $.get(url);
+
+            request.fail(function()
+            {
+              console.log(data);
+            });     
+
+            request.done(function(data)
+            {
+                console.log(data);        //if we want data we need to define that as a paramater in the second set of paranthesis
+
+                var htmlString = "";
+
+                data.forEach(function(post)
+                {
+                    for (var i = 0; i < post.length; i++)
+                    {
+                        var post = post[i];
+
+                        htmlString += "<article class= 'container'>";
+                        htmlString += "<h1>" + post.title + "</h1>";
+                        htmlString += "<p>" + post.content + "</p>";
+                        htmlString += "<p> published at:" + post.date + "</p>";
+                        htmlString += "<p> categories: <button>" + post.categories + "</button></p>";
+                        htmlString += "</article>";
+                    }
+                });
+              
+                $("#posts").html(htmlString);
+
+                $("#button").click(function()
+                {
+                    $.ajax("/data/blog.json").done(function(post)
+                    {   htmlString = "";
+                        console.log(data);
+                        for (var i = 0; i < post.length; i++)
+                        {
+
+                            htmlString += "<article class= 'container'>";
+                            htmlString += "<h1>" + post.title + "</h1>";
+                            htmlString += "<p>" + post.content + "</p>";
+                            htmlString += "<p> published at:" + post.date + "</p>";
+                            htmlString += "<p> categories: <button>" + post.categories + "</button></p>";
+                            htmlString += "</article>";
+                        }
+                          $("#posts").html(htmlString);
+                    });
+
+                });
+            });
+          </script>
+        </main>
+      </body>
+  </html>

@@ -183,8 +183,13 @@
                 })
                     console.log(marker);
 
-                    google.maps.event.addListener(marker, "click", (function(marker) {
+                    google.maps.event.addListener(marker, "dragend", (function(marker) {
                       return function(evt) {
+                        console.log(marker.position.lat());
+
+                        var lat = marker.position.lat(); 
+                        var long = marker.position.lng();
+                        getWeather (lat , long);
                         var content = marker.getTitle();
                         infowindow.setContent(content);
                         infowindow.open(map, marker);
@@ -214,27 +219,14 @@
                         getWeather(lat , long);
                     }
                 });
+                    
 
+                    var lat = 29.444;
+                    var long = -123.8828;
 
+                    var location = lat , long;
 
-                // })
-                });
-
-           
-
-
-        </script>
-
-        <script>
-        // *** key features to integrate***
-        // ** - make a drag and drop feature as opposed to a type coordinates feature. - Get a type coordinates and a city, state:
-        // creat a type = submit button that links to both lat long input boxes *
-            // create an if else function that wont allow the user to submit anything unless both of the boxes are filled in with legit lat/long. 
-            // create an alert stating "Both Lat and Long need to be filled out in order to submit the request."
-            // Link the boxes to the map API and Weather boxes.
-            
-        
-
+            });
         </script>
     </body>
 </html>

@@ -1,9 +1,3 @@
-<?php 
-
-	$favoriteThings =['Guns', 'Dogs', 'Xbox One', 'Boxing'];
-
-?>
-
 <!DOCTYPE html> 
 <html>
 		<head>
@@ -12,10 +6,11 @@
 		</head>
 		<body>
 			<h1>My Favorite Things<h1>
+			<?php $favoriteThings = array('Guns', 'Dogs', 'Xbox One', 'Boxing'); ?>
 			<ol>
-				<?php foreach($favoriteThings as $favoriteThing){ ?>
-				<li><?php echo $favoriteThing; ?></li>
-				<?php } ?>
+				<?php foreach ($favoriteThings as $thing): ?>
+				<li><?= $thing; ?></li>
+				<?php endforeach; ?>
 				</ol>
 		</body>
 </html>

@@ -8,7 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <style>
-        
+
+        .header
+        {
+            height: 65px;
+         /*   width: 100%;*/
+            text-align: center;
+            padding-top: 1.5px;
+            background-color: black;
+            margin-left: -10px;
+            margin-right: -50px;
+            margin-top: -10px;
+            color: white;
+          
+        }
         .latLongSearch
         {
         width: 846px;
@@ -30,9 +43,10 @@
             background-color: red;
             color: white;
             float: left;
-            position: absolute;
+            position: relative;
             margin-left: 15px;
             border-radius: 5px;
+            bottom: 10px;
         }
 
         .inputLeft
@@ -61,7 +75,7 @@
            margin: 0 auto;
            width: 940px;
            padding: 15px; 
-           background-color: #9ECFE4;
+           background-color: #F1F1F1;
            margin-bottom: 15px;
             border-radius: 5px;
         }
@@ -93,16 +107,18 @@
     </style>
     </head>
     <body>
+        <div class = "header"><h1><center>Three Day Weather Forecast</center></h1></div>
         <main class="container">
-            <h1><center>Weather Map API</center></h1>
+           
             <div id="weather"></div>
             <section class="latLongSearch">    
             <h4><label class= "inputLeft" name= "latitude">Latitude:</label></h4>
             <input id="latitude" type="text" class="inputLeft" name= "latitude" placeholder ="Latitude Coord"></input>
     
             <h4><label type="text" class="inputRight" name= "longitude">Longitude:</label></h4>
-            <input id="longitude" type="text" class="inputRight" name= "longitude" placeholder ="Longitude Coord"></input>
+            <input id="longitude" type="text" class="inputRight" name= "longitude" placeholder ="Longitude Coord">
             <button type="submit" id="buttonOne">Locate</button>
+            </input>
         </section>
         <div id="map-canvas"></div>
     

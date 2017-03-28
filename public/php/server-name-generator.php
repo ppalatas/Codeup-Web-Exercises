@@ -4,12 +4,14 @@
 	', 'languid', 'chunky', 'dizzy', 'unsightly'];
 	$noun = ['dog' , 'America', 'lion', 'gun', 'whiskey', 'freedom', 'computer', 'bench', 'hospital', 'hammer'];
 
-function randomServerName($array){
+function randomServerName($array, $array2){
 	
 	$randomIndex = mt_rand(0, count($array) -1);
 	$randomAdjective = $array[$randomIndex];
+	$randomNoun = $array2[$randomIndex];
 
-	return $randomAdjective;
+	$randomName = $randomNoun . " " . $randomAdjective . PHP_EOL;
+	return $randomName;
 }
 
 ?>
@@ -19,6 +21,6 @@ function randomServerName($array){
 			<title>Sever Generater</title>
 		</head>
 		<body>
-			<h1><?php echo randomServerName($adjectives);?><h1>
+			<h1><?php echo randomServerName($adjectives, $noun);?><h1>
 		</body>
 </html>

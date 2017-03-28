@@ -1,0 +1,170 @@
+
+body
+{
+	background-color: #FFFFFF;
+}
+
+#header
+{
+	
+	height: 60px;
+	width: 100%;
+	color: #FFFFFF;
+	position: absolute;
+	margin-top: 60px;
+	font-size: 18px;
+	/*background-color: black;*/
+
+}
+
+.headerBoxes
+{
+	height: 60px;
+	width: 80px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.headerBoxesLeft
+{
+	
+	position: relative;
+	float: left;
+}
+
+.fullStackLogo
+{	
+
+	/*float: left;
+	margin-bottom: 50px;*/
+	
+}
+
+.fullStack
+{
+	background-image: url('/img/fullstack.png');
+}
+
+.headerBoxesRight
+{	
+
+	margin-right: 30px;
+	position: relative;
+	float: right;
+}
+
+#headerContainerImage
+{
+	height: 620px;
+	background-image: url('/img/LA1.jpg');
+}
+
+#titleBox
+{
+
+	height: 375px;
+	width: 1200px;
+	float: left;
+	margin-left: 47px;
+	margin-top: 250px;
+
+}
+
+.subTitle
+{
+	width: 1000px;
+	height: 140;
+	font-family: 'Raleway', sans-serif;
+	color: #FFFFFF;
+	font-size: 3.5em;
+	padding-top: 130px;
+
+}
+
+.titleParagraph
+{
+	width: 700px;
+	height: 80px;
+	font-family: 'Raleway', sans-serif;
+	color: #FFFFFF;
+	font-size: 1em;
+	margin-bottom: 20px;
+	padding-top: 20px;
+}
+
+
+
+#columns
+{
+	width: 370px;
+	height: 150px;
+	border-top: 1px solid grey;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	/*padding-top: 50px;/**/
+	margin-left: 50px;
+	border-bottom: 1px solid grey;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+}
+
+.column2
+{
+	width: 370px;
+	height: 150px;
+	border-top: 1px solid grey;
+	margin-top: 30px;
+	/*padding-top: 50px;/**/
+	margin-left: 40px;
+	border-bottom: 1px solid grey;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+}
+
+.column3
+{
+	width: 370px;
+	height: 150px;
+	border-top: 1px solid grey;
+	margin-top: 30px;
+	/*padding-top: 50px;/**/
+	margin-left: 40px;
+	border-bottom: 1px solid grey;
+	float: left;
+	font-family: 'Raleway', sans-serif;
+	color: #000000;
+}
+
+.columnsHover
+{
+
+    -moz-box-shadow: 0 0 12px #ccc;
+    -webkit-box-shadow: 0 0 12px #ccc;
+    box-shadow: 0 0 12px #ccc;
+}
+
+#responsiveDesignSection
+{
+	height: 100px;
+	background-color: black;
+}
+
+#portfolio
+{
+	height: 600px;
+}
+
+.portfolioContent
+{
+	height: 600px;
+	
+}
+
+li 
+{
+	list-style: none;
+}
+

@@ -1,22 +1,27 @@
 <?php 
 function pagecontroller(){
+$_SESSION;
 
+$session_start();
 
-	// var_dump($_POST);
+$sessionId = session_id();
+
+$loggedInUser = isset($_SESSION['logged_in_user']) ? $_SESSION['logged_in_user'] : 0;
+
+$viewCount++;
+
 
 	$data = array();
 
-	if(!empty($_POST)){
 		$username = isset($_POST['username'])? $_POST['username'] : "";
 		$password = isset($_POST['password'])? $_POST['password'] : "";
 
 		if ($username == 'guest' && $password == 'password'){
+			
+			$_SESSION['view_count'] = $viewCount;
+			$_SESSION['logged_in_user'] = $username;
 			header('location: http://codeup.dev/php/authorized.php');
-		} else {
-			echo "Please retry your username or assword" . PHP_EOL;
-		}
-	
-	}
+		} 
 	return $data;
 
 	} 

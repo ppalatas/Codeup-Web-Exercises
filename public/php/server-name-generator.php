@@ -5,15 +5,17 @@
 	$nouns = ['dog' , 'America', 'lion', 'gun', 'whiskey', 'freedom', 'computer', 'bench', 'hospital', 'hammer'];
 
 function randomServerName($array, $array2){
-	$randomIndexAdjective = mt_rand(0, count($array) -1);
-	$randomAdjective = $array[$randomIndexAdjective];
-	
-	$randomIndexNoun = mt_rand(0, count($array2) -1);
-	$randomNoun = $array2[$randomIndexNoun];
 
-	$randomName =  $randomAdjective . " " . $randomNoun. PHP_EOL;
-	return $randomName;
+	$randomAdjectiveIndex = mt_rand(0, count($array) -1);
+	$randomAdjective = $array[$randomAdjectiveIndex];
+
+	$randomNounIndex = mt_rand(0, count($array2) -1);
+	$randomNoun = $array2[$randomNounIndex];
+
+	return $randomAdjective . " " . $randomNoun . PHP_EOL;
 }
+
+
 ?>
 <!DOCTYPE html>
 <html>

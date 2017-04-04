@@ -2,153 +2,62 @@
 <html>
 
     <head>
-
         <title> Weather Map API</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-    <style>
-
-        .header
-        {
-            height: 65px;
-         /*   width: 100%;*/
-            text-align: center;
-            padding-top: 1.5px;
-            background-color: black;
-            margin-left: -10px;
-            margin-right: -50px;
-            margin-top: -10px;
-            color: white;
-          
-        }
-        .latLongSearch
-        {
-        width: 846px;
-        height: 60px;
-        background-color: #D9D9D9;
-        border: 2px solid white;
-        position: relative;
-        outline: 10px solid white;
-        margin: 0 auto;
-        margin-top: 30px;
-        text-align: center;
-        border-radius: 5px;
-        }
-        
-        button 
-        {
-            height: 40px;
-            width: 50px;
-            background-color: red;
-            color: white;
-            float: left;
-            position: relative;
-            margin-left: 15px;
-            border-radius: 5px;
-            bottom: 10px;
-        }
-
-        .inputLeft
-        {
-            width: 100px;
-            height: 20px;
-            float: left;
-            border-radius: 5px;
-           
-           
-        }
-
-        .inputRight
-        {
-            width: 100px;
-            height: 20px;
-            float: left;
-            border-radius: 5px;
- 
-            
-  
-        }
-        .container
-        {
-           outline-style: 2px solid black;
-           margin: 0 auto;
-           width: 940px;
-           padding: 15px; 
-           background-color: #F1F1F1;
-           margin-bottom: 15px;
-            border-radius: 5px;
-        }
-
-        .box
-        {
-            height: 250px;
-            height: 250px;
-            width: 250px;
-            background-color: #D9D9D9;
-            display:inline-block;
-            outline: 10px solid white;
-            text-align: center;
-            margin-left: 5%;
-            color: black;
-            border-radius: 5px;
-           
-        }
-
-        #map-canvas 
-        {
-            height: 400px;
-            width: 93%;
-            margin: 0 auto;
-            margin-top: 15px;
-            position: relative;
-
-        }
-    </style>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Slabo+27px" rel="stylesheet">
+        <link rel ="stylesheet" href = "/css/weatherMapAPI3.css">
     </head>
+
     <body>
-        <div class = "header"><h1><center>Three Day Weather Forecast</center></h1></div>
+        <div id = "header">
+            <ul>
+                <li class = "headerBoxes headerBoxesLeft fullStack fullStackLogo"></li>
+                <li class = "headerBoxes headerBoxesLeft">Phillip Palatas</li>
+                <li class = "headerBoxCenter"><h2>Weather Map API</h2></li>
+            </ul>
+        </div>
         <main class="container">
            
             <div id="weather"></div>
             <section class="latLongSearch">    
-            <h4><label class= "inputLeft" name= "latitude">Latitude:</label></h4>
-            <input id="latitude" type="text" class="inputLeft" name= "latitude" placeholder ="Latitude Coord"></input>
+                <h4><label  name= "latitude" class ="labelLeft">Latitude:</label></h4>
+                <input id="latitude" type="text" class="inputLeft" name= "latitude" placeholder ="Latitude Coord"></input>
     
-            <h4><label type="text" class="inputRight" name= "longitude">Longitude:</label></h4>
-            <input id="longitude" type="text" class="inputRight" name= "longitude" placeholder ="Longitude Coord">
-            <button type="submit" id="buttonOne">Locate</button>
-            </input>
-        </section>
-        <div id="map-canvas"></div>
-    
+                <h4><label type="text" class="labelRight" name= "longitude">Longitude:</label></h4>
+                <input id="longitude" type="text" class="inputRight" name= "longitude" placeholder ="Longitude Coord">
+                <button type="submit" id="buttonOne">Locate</button>
+            </section>
 
-            </main>
+            <div id="map-canvas"></div>
+        </main>
+            
             <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHkTELMtuCMdk2a6JziHuBf0WdfMmkQes"></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
             <script>
 
-            $(document).ready(function()
-            {
-
-                var APPID = "7f8e3aa0aad113510e0c1eaafd1c17b8";
-                var url = "http://api.openweathermap.org/data/2.5/forecast/daily";
-
-                //Justin's API key: 7f8e3aa0aad113510e0c1eaafd1c17b8
-
-
-                function getWeather(lat , long)
+                $(document).ready(function()
                 {
-                    $.get(url, {
-                        APPID: APPID, 
-                        // q: "San Antonio",
-                        lat: lat,
-                        lon: long,
-                        cnt: 3,                 // controls how many days you get back from the forecast 
-                        units: "imperial"
-                    
+    
+                    var APPID = "7f8e3aa0aad113510e0c1eaafd1c17b8";
+                    var url = "http://api.openweathermap.org/data/2.5/forecast/daily";
+    
+                    //Justin's API key: 7f8e3aa0aad113510e0c1eaafd1c17b8
+    
+    
+                    function getWeather(lat , long)
+                    {
+                        $.get(url, {
+                            APPID: APPID, 
+                            // q: "San Antonio",
+                            lat: lat,
+                            lon: long,
+                            cnt: 3,                 // controls how many days you get back from the forecast 
+                            units: "imperial"
+                        
                     })
-
+    
                     .fail(function(data, status)
                     {
                         alert("Failed to load:" + status);
@@ -161,97 +70,93 @@
                         $("#weather").html("");
 
                         for (var i = 0; i < data.list.length; i++){
-
+    
                             var weather = ""; 
-                            weather += "<div class='box'>  <center> <h3>" + "<strong>" + data.city.name + "</strong>" + "</h3>";
-                            weather += "<img src='http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" + "<br>";
-                            weather += "<strong>" + "Temperature: " + "<h4>" + data.list[i].temp.day + "°F" + "</h4>" + "</strong>" + "<br>";
+                            weather += "<div class='box'>  <center> <h3>" + "<strong>" + data.city.name + "</strong>" + "</h3>" ;
+                            weather += "<img src='http://openweathermap.org/img/w/" + data.list[i].weather[0].icon + ".png'>" +  "<br>";
+                            weather += "<strong>" + "Temperature: " + "<h4>" + data.list[i].temp.day + "°F" + "</h4>" + "</ strong>" + "<br>";
                             weather += "<strong>" + "Humidity: " + "<br>" + data.list[i].humidity + "</strong>" + "</div>";
-                         
-                        console.log(data);
-                       
-                        $("#weather").append(weather);
-
-                    } 
-
+                             
+                            console.log(data);
+                           
+                            $("#weather").append(weather);
+    
+                            } 
+    
+                        });
+                    }
+    
+                    getWeather(29.4268, -98.4896);
+                
+                    var codeup = { lat: 29.4268, lng: -98.4896 };
+                    var mapOptions = {
+                        zoom: 15,
+                        center: codeup
+                    }
+    
+                    var address = "600 Navarro St #350, San Antonio, TX 78205";
+                    var geocoder = new google.maps.Geocoder();
+    
+                    geocoder.geocode({ "address": address }, function(results, status) {
+                        if (status == google.maps.GeocoderStatus.OK) {
+                            map.setCenter(results[0].geometry.location);
+                        } else {
+                            alert("Geocoding was not successful - STATUS: " + status);
+                        }
+    
                     });
-                }
+                        
+                    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+                    var marker = new google.maps.Marker({
+                        position: codeup,
+                        map: map,
+                        draggable: true
+                    })
 
-                getWeather(29.4268, -98.4896);
-            
-                var codeup = { lat: 29.4268, lng: -98.4896 };
-                var mapOptions = {
-                    zoom: 15,
-                    center: codeup
-                }
-
-                var address = "600 Navarro St #350, San Antonio, TX 78205";
-                var geocoder = new google.maps.Geocoder();
-
-                geocoder.geocode({ "address": address }, function(results, status) {
-                    if (status == google.maps.GeocoderStatus.OK) {
-                        map.setCenter(results[0].geometry.location);
-                    } else {
-                        alert("Geocoding was not successful - STATUS: " + status);
-                }
-
-                });
-                    
-                var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-                var marker = new google.maps.Marker({
-                    position: codeup,
-                    map: map,
-                    draggable: true
-                })
                     console.log(marker);
-
+    
                     google.maps.event.addListener(marker, "dragend", (function(marker) {
-                      return function(evt) {
+                        return function(evt) {
                         console.log(marker.position.lat());
-
+    
                         var lat = marker.position.lat(); 
                         var long = marker.position.lng();
                         getWeather (lat , long);
                         var content = marker.getTitle();
                         infowindow.setContent(content);
                         infowindow.open(map, marker);
-                      }
+                        }
                     })(marker));
-
+    
                     var infowindow = new google.maps.InfoWindow({
                     content: "Codeup!"
-                });
 
-                infowindow.open(map, marker);
-
-                
-
-                $("#buttonOne").click(function(){
-                    var lat = 29.444;
-                    var long = -123.8828;
-                    // getWeather(lat,long);
-
-                    lat = parseFloat($("#latitude").val());
-                    long = parseFloat($("#longitude").val());
-
-                        if (!lat || !long){
-                            alert("You need to fill in both Lat and Long!");
-                    } else {
-
-                        getWeather(lat , long);
-                    }
-                });
+                    });
+    
+                    infowindow.open(map, marker);
+    
                     
-
-                    var lat = 29.444;
-                    var long = -123.8828;
-
-                    var location = lat , long;
-
-            });
-
-            // google.maps.event.addListener(marker, 'dragend', function())
-                        // Tweak the code to make the marker update when you hit submit on the lat long coordinates.
+    
+                    $("#buttonOne").click(function(){
+                        var lat = 29.444;
+                        var long = -123.8828;
+                        // getWeather(lat,long);
+    
+                        lat = parseFloat($("#latitude").val());
+                        long = parseFloat($("#longitude").val());
+    
+                            if (!lat || !long){
+                                alert("You need to fill in both Lat and Long!");
+                            } else {
+    
+                                getWeather(lat , long);
+                            }
+                    });
+        
+                        var lat = 29.444;
+                        var long = -123.8828;
+                        var location = lat , long;
+                });
         </script>
     </body>
 </html>

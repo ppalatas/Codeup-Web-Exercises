@@ -20,10 +20,10 @@ $(document).ready(function(){
 
 	$(document).scroll(function() {
 		var y = $(this).scrollTop();
-  		if (y > 1100) {
-    		$('.portfolioContent').fadeIn();
+  		if (y < 800) {
+    		$('.portfolioContent').fadeIn(2000);
   		} else {
-    		$('.portfolioContent').fadeOut();
+    		$('.portfolioContent').fadeOut(2000);
   		}
 });
 });

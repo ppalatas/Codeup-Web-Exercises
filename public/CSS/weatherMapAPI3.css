@@ -1,0 +1,155 @@
+ #header
+ {   
+    height: 60px;
+    margin-top: -17px;
+    color: black;
+    font-size: 18px;
+    background-color: #F9F9F9;
+ 
+}
+
+ .headerBoxes
+{
+    padding-top: 8px;
+    height: 60px;
+    width: 80px;
+    text-align: center;
+     
+}
+
+ .headerBoxesLeft
+{
+    font-family: 'Open Sans Condensed', sans-serif;
+    position: relative;
+    float: left;
+}
+ .headerBoxCenter
+{
+    margin-top: 8px;
+    text-align: center;
+    margin-left: 385px;
+    width: 400px;
+    height: 60px;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+ .headerBoxesRight
+{   
+    visibility: hidden;
+    margin-right: 30px;
+    position: relative;
+    float: right;
+}
+
+ li 
+{
+    list-style: none;
+}
+
+ .latLongSearch
+{
+    width: 846px;
+    height: 60px;
+    background-color: #FBFBFF;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    -moz-box-shadow: 0 0 12px #ccc;
+    -webkit-box-shadow: 0 0 12px #ccc;
+    box-shadow: 0 0 12px #ccc;
+ }
+ 
+ button 
+{
+    height: 25px;
+    width: 50px;
+    background-color: grey;
+    color: white;
+    float: left;
+    position: relative;
+    margin-left: 15px;
+    border-radius: 5px;
+    bottom: 2px;
+}
+
+ .inputLeft
+ {
+    width: 100px;
+    height: 20px;
+    float: left;
+    border-radius: 5px;
+    margin-left: 50px;
+    bottom: 2px;
+    float:left;
+}
+ .inputRight
+{
+    width: 100px;
+    height: 20px;
+    float: left;
+    margin-left: 50px;
+    border-radius: 5px;
+    bottom: 2px;
+    float:left;
+}
+
+ .labelLeft
+{
+    margin-left: 110px;
+    float:left;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+ .labelRight
+{
+    margin-left: 150px;
+    float:left;
+    font-family: 'Open Sans Condensed', sans-serif;    
+}
+
+ .container
+{
+    outline-style: 2px solid black;
+    margin: 0 auto;
+    width: 940px;
+    padding: 15px; 
+    background-color: #FBFBFF;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    -moz-box-shadow: 0 0 12px #ccc;
+    -webkit-box-shadow: 0 0 12px #ccc;
+    box-shadow: 0 0 12px #ccc;
+}
+ .box
+{
+    
+    height: 280px;
+    width: 250px;
+    background-color: #FFFFFF;
+    display:inline-block;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    -moz-box-shadow: 0 0 12px #ccc;
+    -webkit-box-shadow: 0 0 12px #ccc;
+    box-shadow: 0 0 12px #ccc;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-left: 5%;
+    color: black;
+    border-radius: 5px;
+}
+
+ #map-canvas 
+{
+    height: 400px;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: relat;
+}

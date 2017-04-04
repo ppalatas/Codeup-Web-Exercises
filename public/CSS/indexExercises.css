@@ -1,0 +1,48 @@
+#header
+{
+	
+	height: 60px;
+	width: 100%;
+	color: #FFFFFF;
+	position: absolute;
+	/*margin-top: px;*/
+	font-size: 18px;
+	background-color: black;
+}
+.headerBoxes
+{
+	height: 60px;
+	width: 80px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+.headerBoxesLeft
+{
+	
+	position: relative;
+	float: left;
+	padding-top: 8px;
+}
+
+
+
+li 
+{
+	list-style: none;
+}
+
+
+.fullStack
+{
+	background-image: url('/img/fullstack.png');
+}
+
+.headerBoxesRight
+{	
+
+	margin-right: 30px;
+	position: relative;
+	padding-top: 15px;
+	float: right;
+}

@@ -31,23 +31,23 @@
 	</div>
 	
 	<div id = "mainContainer">
-		<div data = "1" id = "moveBoxes" class = "topLeft"></div>
+		<div data = "0" id = "moveBoxes" class = "topLeft"></div>
 
-		<div data = "2" id = "moveBoxes" class = "topMiddle"></div>
+		<div data = "1" id = "moveBoxes" class = "topMiddle"></div>
 
-		<div data = "3" id = "moveBoxes" class = "topRight"></div>
+		<div data = "2" id = "moveBoxes" class = "topRight"></div>
 
-		<div data = "4" id = "moveBoxes" class = "midLeft"></div>
+		<div data = "3" id = "moveBoxes" class = "midLeft"></div>
 
-		<div data = "5" id = "moveBoxes" class = "middle"></div>
+		<div data = "4" id = "moveBoxes" class = "middle"></div>
 
-		<div data = "6" id = "moveBoxes" class = "midRight"></div>
+		<div data = "5" id = "moveBoxes" class = "midRight"></div>
 
-		<div data = "7" id = "moveBoxes" class = "bottomLeft"></div>
+		<div data = "6" id = "moveBoxes" class = "bottomLeft"></div>
 
-		<div data = "8" id = "moveBoxes" class = "bottonRight"></div>
+		<div data = "7" id = "moveBoxes" class = "bottomMiddle"></div>
 
-		<div data = "9" id = "moveBoxes" class = "bottomMiddle"></div>
+		<div data = "8" id = "moveBoxes" class = "bottomRight"></div>
 
 	</div>	
 

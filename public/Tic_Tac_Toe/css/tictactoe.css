@@ -17,10 +17,12 @@
 	background-size:contain;
 }
 
-.player2Move
+.computersMove
 {
-	background-image: url("../img/X.png");
-	background-size:contain;
+	background-image: url("../img/O.png");
+	background-size: contain;
+	background-position: center;
+
 }
 
 #player1Header
@@ -135,12 +137,9 @@
 
 }
 
-.bottomRight
+.bottomMiddle
 {
-	border-top: 3px solid black;
-	border-radius: 2px;
-	border-left: 3px solid black;
-	border-radius: 2px;
+
 }
 
 .bottomLeft
@@ -152,7 +151,7 @@
 	margin-left: 12px;
 }
 
-.bottomMiddle
+.bottomRight
 {
 	border-left: 3px solid black;
 	border-radius: 2px;

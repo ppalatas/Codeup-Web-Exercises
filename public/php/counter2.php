@@ -17,7 +17,8 @@ function pageController(){
 		$data['counter'] = 0;
 	}
 	
-	if(isset($_GET['q'])){
+	if(isset($_GET['q']))
+	{
 		if($_GET['q'] == 'up')
 		
 		{

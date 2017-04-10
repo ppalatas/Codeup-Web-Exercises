@@ -15,6 +15,8 @@ $(document).ready(function(){
 	
 	
 	function player1Move(){
+	
+
 
 		//player one clicks on a box and it inputs an "X" in that box 
 		var playersChoice = squares[player1Move];
@@ -26,20 +28,19 @@ $(document).ready(function(){
 			
 			// push the players box clicked to the array of playersMove.
 			playersMove.push($(this).attr("data"));
-			// setTimeout( function(){
-			// 	computersTurn();
-			// }, 1000);
+			setTimeout (function(){
+				computersTurn();
+			}, 1000);
 
 			console.log(playersMove);
 			console.log($(this).attr("data"));
 
 		});
+	
 	}
 	
 	player1Move();
-	
-	
-	
+
 	
 	function computerAnimate(element){
 		$(element).addClass("computersMove");
@@ -101,17 +102,18 @@ $(document).ready(function(){
 			//cross reference with an if statement saying that if the computers 
 			//move is the same as the users move[i] to get a random square again
 			
-			if(!$.inArray(playersMove, computersMove)){
-				$(this).animate(function(){
-					$(this).addClass("computerMove");
+			// if((computersMove[i] == inArray(playersMove)){
+				
+			// 	$(this).animate(function(){
+			// 		$(this).addClass("computerMove");
 					
 			
-					computersMove.push($(this).attribute("data"));
-				});
-			}
-			console.log(computersMove);
+			// 		computersMove.push($(this).attribute("data"));
+			// 	});
+			// }
+			// console.log(computersMove);
 		});
 	}
-	computersTurn();
+	// computersTurn();
 });
 

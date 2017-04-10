@@ -30,9 +30,9 @@ pageController();
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Counter</title>
-</head>
+	<head>
+		<title>Counter</title>
+	</head>
 <body>
 <form method = "get" action ="#">
 	<input type = "hidden" name = "counter" value = <?php $message ?>>
@@ -127,10 +127,10 @@ pageController();
 // 		<input type = "hidden" name = 'counter' value = <?= $counter ?>>
 // 		<input type = "hidden" name = "q" value = "up">
 // 		<button>Up</button>
-// 	</form>
-// 	<form action = "#" method = "GET"> 
+// 	</form> -->
+// <!-- 	<form action = "#" method = "GET"> 
 // 		<input type = "hidden" name = 'counter' value = <?= $counter ?>>
-// 		<input type = "hidden" name = "q" value = "down">
-// 		<button>Down</button>
+// 		<input type = "hidden" name = "q" value = "down"> -->
+// 		<!-- <button>Down</button>
 // </body>
 // </html> -->

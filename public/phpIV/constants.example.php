@@ -1,5 +1,4 @@
-constants.example.php
-
+<?php
 
 
 define ('DB_HOST', '');   // a constant definition

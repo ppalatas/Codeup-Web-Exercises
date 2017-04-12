@@ -7,7 +7,7 @@ constants.php
 
 // Constants are values that are never going to change 
 
-define ('LANGUAGE', 'FRENCH'); // a constant definition
+define ('LANGUAGE', 'ENGLISH'); // a constant definition
 
 echo 'The language for this page is ', LANGUAGE, PHP_EOL;
 

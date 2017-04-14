@@ -18,17 +18,17 @@ $(document).ready(function(){
 		$(".column3").removeClass("columnsHover");
 	});
 
-	$(document).scroll(function() {
-		var y = $(this).scrollTop();
-  		if (y < 800) {
-    		$('.portfolioContent').fadeIn(2000);
-  		} else {
-    		$('.portfolioContent').fadeOut(2000);
-  		}
-});
+// 	$(document).scroll(function() {
+// 		var y = $(this).scrollTop();
+//   		if (y < 800) {
+//     		$('.portfolioContent').fadeIn(2000);
+//   		} else {
+//     		$('.portfolioContent').fadeOut(2000);
+//   		}
+// });
 });
 
-
+// #myCarousel > a.right.carousel-control
 
 
 

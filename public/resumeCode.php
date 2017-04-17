@@ -1,12 +1,11 @@
-<?php 
 
-$phillipPalatas = "Phillip Palatas";
+
+var phillipPalatas = "Phillip Palatas";
 $possibleCandidate = "has submitted a resume to you.";
 
-if($phillipPalatas)
+if (phillipPalatas)
 {
-    echo $phillipPalatas . " " . $possibleCandidate . "." . " " . "Set up an interview!" . PHP_EOL;
+    console.log(phillipPalatas + " " + possibleCandidate + " " + "Set up an interview!");
 } else {
-    echo "I wish you the best of luck in finding your Dev!" . PHP_EOL;
+    console.log("I wish you the best of luck in finding your Dev!");
 }
-?>

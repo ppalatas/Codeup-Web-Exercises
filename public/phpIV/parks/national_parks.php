@@ -1,13 +1,61 @@
 <?php
 
 require __DIR__ . '/db_connection.php';
+require __DIR__ . '/Input.php';
+require __DIR__ . '/Park.php';
 
 
 function pageController(){
 
-	$_GET;
-
 	$data = [];
+
+	$data['errors'] = [];
+
+	if(!empty($_POST)){
+		$park = new Park();
+
+		try
+		{ 
+			$park->name = Input::getString('name');
+
+		} catch (Exception $e){
+			$data['errors'][] = $e->getMessage();
+		}
+
+		try
+		{
+			$park->location = Input::getString('location');
+		} catch (Exception $e){
+			$data['errors'][] = $e->getMessage();
+
+		}
+
+		try
+		{
+			$park->description = Input::getString('description');
+		} catch (Exception $e) 	{
+			$data['errors'][] = $e->getMessage();
+		}
+
+		try
+		{
+			$park->date_established = Input::getNumber('date_established');
+		} catch(Exception $e) {
+			$data['errors'][] = $e->getMessage();
+		}
+
+		try
+		{
+			$park->area_in_acres = Input::getNumber('area_in_acres');
+		} catch (Exception $e){
+			$data['errors'][] = $e->getMessage();
+		}
+
+		if(empty($data['errors'])){
+			$park->insert();
+		}
+	}
+	
 
 	if(isset($_GET['page'])){
 		$data['page'] = $_GET['page'];
@@ -16,6 +64,7 @@ function pageController(){
 
 		$data['page'] = 1;
 	}
+	$data['parks'] = Park::paginate($data['page'], 4);
 
 	if($data['page'] < 1 || !is_numeric($data['page'])){
 		$data['page'] = 1;
@@ -27,48 +76,6 @@ function pageController(){
 	return $data;
 }
 extract(pageController());
-
-function addPark($connection){
-	$_POST;
-
-	$add = [];
-
-
-    $insert = "INSERT INTO national_parks (name, location, description, date_established, area_in_acres) VALUES (:name, :location, :description, :date_established, :area_in_acres)";
-
-    $statement = $connection->prepare($insert);
-
-    $statement->bindValue(':name', $_POST['name'], PDO::PARAM_STR);
-    $statement->bindValue(':location', $_POST['location'], PDO::PARAM_STR);
-    $statement->bindValue(':description', $_POST['description'], PDO::PARAM_STR);
-    $statement->bindValue(':date_established', $_POST['date_established'], PDO::PARAM_INT);
-    $statement->bindValue(':area_in_acres', $_POST['area_in_acres'], PDO::PARAM_INT);
-
-    $statement->execute();
-}
-
-if (!empty($_POST['name']) &&
-	!empty($_POST['location']) &&
-	!empty($_POST['description']) && 
-	!empty($_POST['date_established']) &&
-	!empty($_POST['area_in_acres']))
-{
-	addPark($connection);
-}
-	
-	$limit = 4;
-
-	$offSet = "offset" . " " . ($page -1) * $limit; 
-
-	$select = "SELECT * FROM national_parks limit " . $limit . " " . $offSet;
-
-	$statement  = $connection->prepare($select);
-
-	$statement->execute(); 
-
-	$parks = $statement->fetchAll(PDO::FETCH_ASSOC);
-
-
 
 
 ?>
@@ -94,11 +101,11 @@ if (!empty($_POST['name']) &&
 
 			<?php foreach($parks as $park => $rows) : ?>
 				<tr>
-					<td><?= $rows['name']?></td>
-					<td><?= $rows['location']?></td>
-					<td><?= $rows['description']?></td>
-					<td><?= $rows['date_established']?></td>
-					<td><?= $rows['area_in_acres']?></td>
+					<td><?= $rows->name ?></td>
+					<td><?= $rows->location ?></td>
+					<td><?= $rows->description ?></td>
+					<td><?= $rows->date_established ?></td>
+					<td><?= $rows->area_in_acres ?></td>
 				</tr>
 			<?php endforeach; ?>
 		</table>
@@ -115,8 +122,13 @@ if (!empty($_POST['name']) &&
 		</form>
 		<br>
 		<br>
-		<h3> Add A National Park</h3>
+		<h3>Add A National Park</h3>
 		<br>
+			<ul>
+				<?php foreach($errors as $error): ?>
+					<li><?= $error; ?></li>
+				<?php endforeach; ?>
+			</ul>
 		<form method = "POST" action = "national_parks.php">
 			<div class = "containerInput">
 				<label class = "label" placeholder = "Name">Name: </label>

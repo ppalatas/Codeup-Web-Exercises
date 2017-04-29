@@ -3,9 +3,7 @@ $(document).ready(function(){
 	"use strict";
 
 	var squares = ["topLeft", "topMiddle", "topRight", "midLeft", "middle", "midRight", "bottomLeft", "bottomMiddle", "bottomRight"];
-	
 	var computersMove = [];
-	
 	var playersMove = [];
 	
 	//write a function that is a jQuery link that says "click here to start" 
@@ -96,13 +94,14 @@ $(document).ready(function(){
 						break;
 			}
 			
-			// i++;
+			
 
 			//cross reference with an if statement saying that if the computers 
 			//move is the same as the users move[i] to get a random square again
 			
 			if(randomSquare == playersMove){
-				
+			// 	computersTurn();
+			// }else {
 				$(this).animate(function(){
 					$(this).addClass("computerMove");
 					
@@ -110,11 +109,7 @@ $(document).ready(function(){
 					computersMove.push($(this).attribute("data"));
 				});
 			// }
-			// console.log(computersMove);
-		// }, 1000);
+		}
 	}
-	// computersTurn();
-}
-
 });
 

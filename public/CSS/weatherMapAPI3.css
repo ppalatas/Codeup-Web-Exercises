@@ -1,46 +1,45 @@
  #header
  {   
-    height: 60px;
-    margin-top: -17px;
+    height: 10%;
+    width: 100%;
     color: black;
+    text-align: center;
     font-size: 18px;
+    margin-bottom: 20px;
     background-color: #F9F9F9;
  
 }
 
+#weather
+{
+    width: 98%;
+    text-align: center;
+}
+
+
  .headerBoxes
+
 {
     padding-top: 8px;
     height: 60px;
     width: 80px;
+    margin: auto;
     text-align: center;
      
 }
 
- .headerBoxesLeft
-{
-    font-family: 'Open Sans Condensed', sans-serif;
-    position: relative;
-    float: left;
-}
  .headerBoxCenter
 {
-    margin-top: 8px;
+    padding-top: .5px;
     text-align: center;
     margin-left: 385px;
-    width: 400px;
-    height: 60px;
+    width: 20%;
+    height: 100%;
+    margin: auto;
     color: black;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
- .headerBoxesRight
-{   
-    visibility: hidden;
-    margin-right: 30px;
-    position: relative;
-    float: right;
-}
 
  li 
 {
@@ -49,11 +48,11 @@
 
  .latLongSearch
 {
-    width: 846px;
+    width: 100%;
     height: 60px;
     background-color: #FBFBFF;
     position: relative;
-    margin: 0 auto;
+    margin: auto;
     margin-top: 30px;
     text-align: center;
     border-top: 1px solid grey;
@@ -66,32 +65,32 @@
  button 
 {
     height: 25px;
-    width: 50px;
+    width: 10%;
     background-color: grey;
     color: white;
     float: left;
-    position: relative;
-    margin-left: 15px;
+    text-align: center;
+    margin-left: 1%;
     border-radius: 5px;
     bottom: 2px;
 }
 
  .inputLeft
  {
-    width: 100px;
+    width: 15%;
     height: 20px;
     float: left;
     border-radius: 5px;
-    margin-left: 50px;
+    margin-left: 10%;
     bottom: 2px;
     float:left;
 }
  .inputRight
 {
-    width: 100px;
+    width: 15%;
     height: 20px;
     float: left;
-    margin-left: 50px;
+    margin-left: 5%;
     border-radius: 5px;
     bottom: 2px;
     float:left;
@@ -99,14 +98,14 @@
 
  .labelLeft
 {
-    margin-left: 110px;
+    margin-left: 10%;
     float:left;
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
  .labelRight
 {
-    margin-left: 150px;
+    margin-left: 10%;
     float:left;
     font-family: 'Open Sans Condensed', sans-serif;    
 }
@@ -115,7 +114,7 @@
 {
     outline-style: 2px solid black;
     margin: 0 auto;
-    width: 940px;
+    width: 80%;
     padding: 15px; 
     background-color: #FBFBFF;
     margin-bottom: 15px;
@@ -126,30 +125,98 @@
     -webkit-box-shadow: 0 0 12px #ccc;
     box-shadow: 0 0 12px #ccc;
 }
+ 
  .box
 {
     
     height: 280px;
-    width: 250px;
-    background-color: #FFFFFF;
+    width: 30%;
+    color: black;
+    margin: 0px 0px 10px 1%;
+    text-align: center;
+    border-radius: 5px;
     display:inline-block;
+    background-color: #FFFFFF;
     border-left: 1px solid grey;
     border-right: 1px solid grey;
     -moz-box-shadow: 0 0 12px #ccc;
     -webkit-box-shadow: 0 0 12px #ccc;
     box-shadow: 0 0 12px #ccc;
-    text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-left: 5%;
-    color: black;
-    border-radius: 5px;
 }
 
  #map-canvas 
 {
     height: 400px;
     width: 93%;
-    margin: 0 auto;
+    margin:  auto;
     margin-top: 15px;
-    position: relat;
+}
+
+@media screen and (max-width: 600px){
+    .box
+    {
+        width: 100%;
+    }
+
+    #header
+    {   
+        margin: auto;
+        text-align: center;
+    }
+
+    ul, li
+    {
+        margin: auto;
+        text-align: center;
+    }
+    
+    .boxCenter
+    {
+        width: 100%;
+    }
+
+    .latLongSearch
+    {
+        width: 100%;
+    }
+
+    button{
+
+       width: 15%;
+       margin-left: 3%;
+
+    }
+
+    .inputLeft
+ {
+    width: 10%;
+    margin-left: 8%;
+        
+    }
+    .inputRight
+    {
+        width: 15%;
+        margin-left: 8%;
+        
+    }
+
+    .labelLeft
+    {
+        width: 10%;
+        margin-left: 8%;
+        
+    }
+
+    .labelRight
+    {
+        width: 10%;
+        margin-left: 8%;
+           
+    }
+
+    .headerBoxCenter
+    {
+        width: 50%;
+    }
 }

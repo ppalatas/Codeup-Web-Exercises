@@ -7,7 +7,7 @@
 // 3 Database name. employees
 // 4 username: vagrant 
 // 5 password: vagrant 
-require __DIR__ . '/constants.php';
+require_once __DIR__ . '/constants.php';
 
 //         ^^ sets the correct file path to get to the file that is linked VIA the require. when using DIR you must have the forward slash 
 

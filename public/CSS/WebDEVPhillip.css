@@ -70,26 +70,163 @@ a:hover
 
 .fullStackLogo
 {	
-
-	/*float: left;
-	margin-bottom: 50px;*/
 	
 }
 
-#myCarousel > div > div.item.active > img
+.carouselHolders
 {
-	margin-left:200px;
-
+	width: 250px;
+	height: 320px;
+	margin-left: 12px;
+	margin-top: 15px;
+	padding: 10px;
+	border: 1px solid black;
+	float: left;
 }
 
-#myCarousel
+.carouselHolders2
 {
-	height: 300px;
-	width: 1100px;
-	margin-top: 40px;
-	margin-bottom: 100px;
-	margin-left: 85px;
+	width: 250px;
+	height: 320px;
+	margin-left: 12px;
+	margin-top: 15px;
+	padding: 10px;
+	display: none;
+	border: 1px solid black;
+	float: left;
+}
 
+.image
+{
+	width: 230px;
+	height:140px;
+	border-radius: 2px;
+}
+
+.image1
+{
+	background-image: url('/img/adlister.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.image2
+{
+	background-image: url('/img/SimpleSimon.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.image3
+{
+	background-image: url('/img/weatherAPI.png');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.hide 
+{
+	display: none;
+}
+
+.image4
+{
+	background-image: url('/img/weatherAPI.png');
+	background-size: cover;
+	display: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.image5
+{
+	background-image: url('/img/weatherAPI.png');
+	background-size: cover;
+	display: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.image6
+{
+	background-image: url('/img/weatherAPI.png');
+	background-size: cover;
+	display: none;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.projectDescription
+{
+	width: 230px;
+	height:160px;
+	padding: 5px;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+.carouselSection
+{
+	height: 590px;
+	
+}
+.carouselLeft
+{	height: 50px;
+	width: 50px;
+	float: left;
+	right: 200px;
+	display: inline-block;
+	background-size: cover;
+	background-position: center center;
+	background-image: url('/img/leftArrow.png');
+}
+
+.carouselRight
+{	height: 50px;
+	width: 50px;
+	float: right;
+	margin-top: 180px;
+	display: inline-block;
+	background-size: cover;
+	margin-right: 160px;
+	background-position: center center;
+	background-image: url('/img/rightArrow.png');
+}
+
+
+.carouselSize 
+{
+	margin-top: 210px;
+	margin-bottom: 30px;
+	margin-left: 241px;
+	height: 350px;
+	width: 800px;
+	position: absolute;
+	border: 1px solid black;
+}
+
+.carouselSize2
+{
+	margin-top: 210px;
+	margin-bottom: 30px;
+	margin-left: 241px;
+	height: 350px;
+	width: 800px;
+	position: absolute;
+	border: 1px solid black;
+}
+
+.projectsInDevelopment 
+{
+	margin-top: 210px;
+	margin-bottom: 30px;
+	margin-left: 241px;
+	height: 350px;
+	width: 800px;
+	background-color: white;
+	position: relative;
+	border: 1px solid black;
 }
 
 .fullStack
@@ -152,9 +289,7 @@ a:hover
 	font-family: 'Raleway', sans-serif;
 	color: #FFFFFF;
 	font-size: 1em;
-	/*margin-bottom: 300px;*/
 	margin-left: 45px;
-	/*padding-top: -200px;*/
 	position: relative;
 }
 
@@ -193,7 +328,6 @@ a:hover
 	height: 150px;
 	border-top: 1px solid grey;
 	margin-top: 30px;
-	/*padding-top: 50px;/**/
 	margin-left: 40px;
 	border-bottom: 1px solid grey;
 	float: left;
@@ -216,7 +350,7 @@ a:hover
 }
 
 
-.portfolioContent
+.Content
 {
 	height: 200px;
 	

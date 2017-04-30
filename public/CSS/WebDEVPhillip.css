@@ -56,7 +56,7 @@ a:hover
 .headerBoxes
 {
 	height: 60px;
-	width: 80px;
+	width: 8%;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 }
@@ -70,15 +70,15 @@ a:hover
 
 .fullStackLogo
 {	
-	
+	width: 6.5%;
 }
 
 .carouselHolders
 {
-	width: 250px;
+	width: 32%;
 	height: 320px;
-	margin-left: 12px;
-	margin-top: 15px;
+	margin-left: 1%;
+	margin-top: .8%;
 	padding: 10px;
 	border: 1px solid black;
 	float: left;
@@ -86,10 +86,34 @@ a:hover
 
 .carouselHolders2
 {
-	width: 250px;
+	width: 32%;
 	height: 320px;
 	margin-left: 12px;
 	margin-top: 15px;
+	padding: 10px;
+	display: none;
+	border: 1px solid black;
+	float: left;
+}
+
+.carouselHolders21
+{
+	width: 32%;
+	height: 320px;
+	margin-left: 311px;
+	margin-top: 16px;
+	padding: 10px;
+	display: none;
+	border: 1px solid black;
+	float: left;
+}
+
+.carouselHolders22
+{
+	width: 32%;
+	height: 320px;
+	margin-left: 360px;
+	margin-top: 37px;
 	padding: 10px;
 	display: none;
 	border: 1px solid black;
@@ -106,30 +130,22 @@ a:hover
 .image1
 {
 	background-image: url('/img/adlister.png');
-	background-size: cover;
-	background-position: center center;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
 .image2
 {
 	background-image: url('/img/SimpleSimon.png');
-	background-size: cover;
-	background-position: center center;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
 .image3
 {
 	background-image: url('/img/weatherAPI.png');
-	background-size: cover;
-	background-position: center center;
+	background-size: 100%;
 	background-repeat: no-repeat;
-}
-
-.hide 
-{
-	display: none;
 }
 
 .image4
@@ -137,7 +153,6 @@ a:hover
 	background-image: url('/img/weatherAPI.png');
 	background-size: cover;
 	display: none;
-	background-position: center center;
 	background-repeat: no-repeat;
 }
 
@@ -146,7 +161,6 @@ a:hover
 	background-image: url('/img/weatherAPI.png');
 	background-size: cover;
 	display: none;
-	background-position: center center;
 	background-repeat: no-repeat;
 }
 
@@ -155,7 +169,6 @@ a:hover
 	background-image: url('/img/weatherAPI.png');
 	background-size: cover;
 	display: none;
-	background-position: center center;
 	background-repeat: no-repeat;
 }
 .projectDescription
@@ -175,8 +188,9 @@ a:hover
 {	height: 50px;
 	width: 50px;
 	float: left;
-	right: 200px;
-	display: inline-block;
+	margin-top: 150px;
+	margin-left: 155px;
+	display:inline-block;
 	background-size: cover;
 	background-position: center center;
 	background-image: url('/img/leftArrow.png');
@@ -186,7 +200,7 @@ a:hover
 {	height: 50px;
 	width: 50px;
 	float: right;
-	margin-top: 180px;
+	margin-top: 150px;
 	display: inline-block;
 	background-size: cover;
 	margin-right: 160px;
@@ -197,11 +211,11 @@ a:hover
 
 .carouselSize 
 {
-	margin-top: 210px;
+	
 	margin-bottom: 30px;
 	margin-left: 241px;
-	height: 350px;
-	width: 800px;
+	padding: 8px;
+	width: 62%;
 	position: absolute;
 	border: 1px solid black;
 }
@@ -231,6 +245,7 @@ a:hover
 
 .fullStack
 {
+	width: 6.4%;
 	background-image: url('/img/fullstack.png');
 }
 
@@ -250,6 +265,7 @@ a:hover
 
 #titleBox > div.titleParagraph > p
 {
+
 	margin-top: 150px;
 	margin-left: -40px;
 
@@ -258,11 +274,19 @@ a:hover
 {
 
 	height: 375px;
-	width: 1200px;
+	width: 90%;
 	float: left;
 	margin-left: 47px;
 	margin-top: 180px;
 
+}
+.carouselArrowContainer
+{
+	width: 100%;
+	height: 390px;
+	position: absolute;
+	margin-top: 200px;
+	padding-bottom: 50px;
 }
 
 .subTitle
@@ -297,12 +321,11 @@ a:hover
 
 #columns
 {
-	width: 370px;
-	height: 150px;
+	width: 30%;
 	border-top: 1px solid grey;
 	margin-top: 30px;
 	margin-bottom: 30px;
-	margin-left: 50px;
+	margin-left: 3%;
 	border-bottom: 1px solid grey;
 	float: left;
 	font-family: 'Raleway', sans-serif;
@@ -311,11 +334,10 @@ a:hover
 
 .column2
 {
-	width: 370px;
-	height: 150px;
+	width: 30%;
 	border-top: 1px solid grey;
 	margin-top: 30px;
-	margin-left: 40px;
+	margin-left: 3%;
 	border-bottom: 1px solid grey;
 	float: left;
 	font-family: 'Raleway', sans-serif;
@@ -324,11 +346,10 @@ a:hover
 
 .column3
 {
-	width: 370px;
-	height: 150px;
+	width: 30%;
 	border-top: 1px solid grey;
 	margin-top: 30px;
-	margin-left: 40px;
+	margin-left: 3%;
 	border-bottom: 1px solid grey;
 	float: left;
 	font-family: 'Raleway', sans-serif;
@@ -521,4 +542,42 @@ button
 	margin-right: 500px;
 	margin-top: 100px;
 	margin-left: 20px;
+}
+
+@media screen and (max-width: 600px){
+	#header
+	{
+		width: 100%;
+	}
+
+	#titleBox
+	{
+		margin: auto;
+		width:100%;
+	}
+
+	#columns
+	{
+		width: 100%;
+	}
+
+	.carouselSize
+	{
+		width: 100%;
+	}
+
+	.column2
+	{
+		width: 100%;
+	}
+
+	.column3
+	{
+		width: 100%;
+	}
+
+	.fullStack
+	{
+		width: 22%;
+	}
 }

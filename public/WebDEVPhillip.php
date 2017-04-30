@@ -76,62 +76,64 @@
 					<p><center>Finding the right design and development team is important; every design firm has their own unique 	style, business practice, and processes. Making sure you have found a good match is crucial, as planning out a 	scope of work can be a daunting task.</center></p>
 				</div>
 				<a name= "portfolio"></a>
-				<div id ="carousel" class="portfolioContent">
-					<div class="carouselLeft"></div>
-					<div class="carouselRight"></div>
-						<div class="carouselSize">
-							<div class="carouselHolders">
-								<div class="image image1"></div>
-								<div class="projectDescription">
-									<h4>AdLister</h4>
-									<p>
-									FullStack Project using MVC : An adlister application where users can post items to either sell or buy. Created with full login and registration pages. -PHP Based.
-									</p>
-								</div>
-							</div>
-							<div class="carouselHolders">
-								<div class="image image2"></div>
-								<div class="projectDescription">
-									<h4>Simple Simon</h4>
-									<p>
-									A “Simon Says” game. Created using JavaScript, jQuery and CSS. Simon creates a random pattern and the user must follow it or get a game over. 
-									</p>
-								</div>
-							</div>
-							<div class="carouselHolders">
-								<div class="image image3"></div>
-								<div class="projectDescription">
-										<h4>Weather Map API</h4>
-										<p>
-										A weather map API app that displays the next 3 days of weather based off of the location that you type in. It works 
-										internationally! - JavaScript
-										</p>
-									</div>
-								</div>
-							<div class="carouselHolders2 hide">
-								<div class="image image3"></div>
-								<div class="projectDescription">
-										<h4>Weather Map API</h4>
-										<p>
-										A weather map API app that displays the next 3 days of weather based off of the location that you type in. It works 
-										internationally! - JavaScript
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="carouselHolders2 hide">
-								<div class="image image3"></div>
-								<div class="projectDescription">
-										<h4>Weather adlfjadfl API</h4>
-										<p>
-										A weather map API app that displays the next 3 days of weather based off of the location that you type in. It works 
-										internationally! - JavaScript
-										</p>
-									</div>
-								</div>
-							</div>
+					<div id ="carousel" class="portfolioContent">
+				<div class="carouselArrowContainer">
+						<div class="carouselLeft"></div>
+						<div class="carouselRight"></div>
 							<div class="carouselSize">
-							<div class="carouselHolders2 hide">
+								<div class="carouselHolders">
+									<div class="image image1"></div>
+									<div class="projectDescription">
+										<h4>AdLister</h4>
+										<p>
+										FullStack Project using MVC : An adlister application where users can post items to either sell or buy. Created with full login and registration pages. -PHP Based.
+										</p>
+									</div>
+								</div>
+								<div class="carouselHolders">
+									<div class="image image2"></div>
+									<div class="projectDescription">
+										<h4>Simple Simon</h4>
+										<p>
+										A “Simon Says” game. Created using JavaScript, jQuery and CSS. Simon creates a random pattern and the user must follow it or get a game over. 
+										</p>
+									</div>
+								</div>
+								<div class="carouselHolders">
+									<div class="image image3"></div>
+									<div class="projectDescription">
+											<h4>Weather Map API</h4>
+											<p>
+											A weather map API app that displays the next 3 days of weather based off of the location that you type in. It works 
+											internationally! - JavaScript
+											</p>
+										</div>
+									</div>
+								<div class="carouselHolders2">
+									<div class="image image3"></div>
+									<div class="projectDescription">
+											<h4>Weather Map API</h4>
+											<p>
+											A weather map API app that displays the next 3 days of weather based off of the location that you type in. It works 
+											internationally! - JavaScript
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="carouselHolders21">
+									<div class="image image3"></div>
+									<div class="projectDescription">
+											<h4>Weather adlfjadfl API</h4>
+											<p>
+											A weather map API app that displays the next 3 days of weather based off of the location that you type in. It works 
+											internationally! - JavaScript
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="carouselSize"> -->
+							<div class="carouselHolders22">
 								<div class="image image3"></div>
 								<div class="projectDescription">
 										<h4>Weather Map API</h4>
@@ -141,7 +143,7 @@
 										</p>
 									</div>
 								</div>
-							</div>
+							<!-- </div> -->
 						</div>
 					</div>
 				</div>

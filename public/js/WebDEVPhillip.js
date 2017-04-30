@@ -26,14 +26,14 @@ $(document).ready(function(){
 	});
 	
 	$(".carouselRight").click(function(){
-		$(".carouselSize").fadeOut(500);
+		$(".carouselSize").removeClass(500);
 		$(".carouselHolders").fadeOut(500);
 		setTimeout(function(){
-			$(".carouselSize").fadeIn(1000);
-			// $(".carouselHolders2").show(500);
-			$(".carouselHolders2").fadeIn(1000);
+			$(".carouselSize").fadeIn(2000);
+			$(".carouselHolders2").fadeIn(2000);
+			$(".carouselHolders21").fadeIn(2000);
+			$(".carouselHolders22").fadeIn(2000);
 		}, 521);
-
 	});
 });
 

@@ -13,6 +13,7 @@ body
 #header > ul > li.headerBoxes.headerBoxesLeft.fullStack.fullStackLogo
 {
 	list-style:none;
+	width: 81px;
 }
 
 #header > ul > li:nth-child(2)
@@ -70,7 +71,7 @@ a:hover
 
 .fullStackLogo
 {	
-	width: 6.5%;
+	width: 40px;
 }
 
 .carouselHolders
@@ -122,7 +123,7 @@ a:hover
 
 .image
 {
-	width: 230px;
+	width: 100%;
 	height:140px;
 	border-radius: 2px;
 }
@@ -130,6 +131,7 @@ a:hover
 .image1
 {
 	background-image: url('/img/adlister.png');
+	width: 100%;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -138,6 +140,7 @@ a:hover
 {
 	background-image: url('/img/SimpleSimon.png');
 	background-size: 100%;
+	width: 100%;
 	background-repeat: no-repeat;
 }
 
@@ -260,16 +263,11 @@ a:hover
 #headerContainerImage
 {
 	height: 620px;
+	margin: auto;
 	background-image: url('/img/LA1.jpg');
 }
 
-#titleBox > div.titleParagraph > p
-{
 
-	margin-top: 150px;
-	margin-left: -40px;
-
-}
 #titleBox
 {
 
@@ -291,14 +289,14 @@ a:hover
 
 .subTitle
 {
-	width: 1000px;
-	height: 70px;
+	width: 80%;
 	font-family: 'Raleway', sans-serif;
 	color: #FFFFFF;
 	font-size: 3.5em;
 	padding-top: 80px;
 
 }
+
 
 #submit
 {
@@ -308,12 +306,11 @@ a:hover
 }
 .titleParagraph
 {
-	width: 700px;
-	height: 80px;
+	width: 60%;
 	font-family: 'Raleway', sans-serif;
 	color: #FFFFFF;
 	font-size: 1em;
-	margin-left: 45px;
+	margin-left: 7%;
 	position: relative;
 }
 
@@ -447,6 +444,10 @@ a
 	color: white;
 }
 
+#titleBox > div.titleParagraph > p
+{
+	margin-left: -70px;
+}
 #footerColumn3
 {
 	width: 340px;
@@ -580,4 +581,62 @@ button
 	{
 		width: 22%;
 	}
+
+	#titleBox > div.subTitle > p
+	{
+		width: 80%;
+		text-align: center;
+	}
+
+	#header > ul > li:nth-child(4)
+	{
+		margin-left: 6%;
+	}
+
+	#header > ul > li.headerBoxes.headerBoxesLeft.fullStack.fullStackLogo
+	{
+		margin-left: 2%;
+	}
+
+	#header > ul > li:nth-child(2)
+	{
+		margin-left: 6%;
+
+	}
+
+	#header > ul > li:nth-child(5)
+	{
+		margin-left: 6%;
+	}
+
+	#header > ul > li:nth-child(7)
+	{
+		margin-left: 6%;
+
+	}
+
+	#header > ul > li:nth-child(6)
+	{
+		margin-left: 6%;
+	}
+
+	.subTitle
+	{
+		width: 80%;
+		margin-left: 12%;
+		text-align: center;
+		margin-top: 120px;
+	}
+	
+	.titleParagraph
+	{
+		width: 100%;
+		padding: 1%;
+	}
+	#titleBox > div.titleParagraph > p
+	{	
+		margin-left: 5%;
+		width: 80%;
+	}
+
 }

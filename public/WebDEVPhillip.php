@@ -80,7 +80,6 @@
 				<div class="carouselArrowContainer">
 						<div class="carouselLeft"></div>
 						<div class="carouselRight"></div>
-							<div class="carouselSize">
 								<div class="carouselHolders">
 									<div class="image image1"></div>
 									<div class="projectDescription">
@@ -119,7 +118,7 @@
 											</p>
 										</div>
 									</div>
-								</div>
+								<!-- </div> -->
 								<div class="carouselHolders21">
 									<div class="image image3"></div>
 									<div class="projectDescription">
@@ -131,7 +130,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
 							<!-- <div class="carouselSize"> -->
 							<div class="carouselHolders22">
 								<div class="image image3"></div>
@@ -143,7 +141,7 @@
 										</p>
 									</div>
 								</div>
-							<!-- </div> -->
+							</div>
 						</div>
 					</div>
 				</div>

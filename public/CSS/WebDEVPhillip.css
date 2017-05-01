@@ -76,8 +76,7 @@ a:hover
 
 .carouselHolders
 {
-	width: 32%;
-	height: 320px;
+	width: 21%;
 	margin-left: 1%;
 	margin-top: .8%;
 	padding: 10px;
@@ -176,8 +175,7 @@ a:hover
 }
 .projectDescription
 {
-	width: 230px;
-	height:160px;
+	width: 99%;
 	padding: 5px;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
@@ -212,7 +210,7 @@ a:hover
 }
 
 
-.carouselSize 
+/*.carouselSize 
 {
 	
 	margin-bottom: 30px;
@@ -222,7 +220,7 @@ a:hover
 	position: absolute;
 	border: 1px solid black;
 }
-
+*/
 .carouselSize2
 {
 	margin-top: 210px;
@@ -281,10 +279,11 @@ a:hover
 .carouselArrowContainer
 {
 	width: 100%;
-	height: 390px;
-	position: absolute;
-	margin-top: 200px;
+	height: auto;
+	overflow: auto;
+	margin-top: 20%;
 	padding-bottom: 50px;
+	margin-bottom: 20%;
 }
 
 .subTitle
@@ -374,18 +373,21 @@ a:hover
 	
 }
 
-.footer {
-  
-  bottom: 0;
+.footer 
+{
+  border: 1px solid black;
   width: 100%;
-  height: 320px;
+  height: auto;
+  overflow: auto;
+  position: absolute;
+  margin-top: 1%;
+  padding-bottom: 3%;
   background-color: #252525;
   text-align: center;
 }
 
 .container
 {
-  
   color: #fff;
   width: 100%;
 }
@@ -500,7 +502,7 @@ button
 
 #logo
 {
-	width:800px;
+	width: 60%;
 	height:200px;
 	background-image: url('../img/logoWeb.png');
 	float:left;
@@ -633,10 +635,44 @@ button
 		width: 100%;
 		padding: 1%;
 	}
+
+	.projectDescription
+	{
+			width: 100%;
+	}	
+
 	#titleBox > div.titleParagraph > p
 	{	
-		margin-left: 5%;
+			margin-left: 5%;
+			width: 80%;
+	}
+	.carouselHolders
+	{
 		width: 80%;
+		margin-left: 10%;
 	}
 
+	.carouselArrowContainer
+	{
+		height: auto;
+		overflow: auto;
+		width: 100%;
+	}
+	.footer
+	{
+		
+		padding-bottom: 5%;
+		position: absolute;
+		width: 100%;
+	}
+
+	#footerColumns
+	{
+		width: 100%;
+	}
+
+	#logo
+	{
+		width: 100%;
+	}
 }
